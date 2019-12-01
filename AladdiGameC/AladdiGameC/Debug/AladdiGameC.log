@@ -1,0 +1,145 @@
+﻿  Aladdin.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\aladdin.cpp(90): warning C4305: 'argument': truncation from 'double' to 'FLOAT'
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\aladdin.cpp(94): warning C4305: 'argument': truncation from 'double' to 'FLOAT'
+  AladdinAnimation.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  AladinState.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\aladinstate.cpp(87): warning C4244: '=': conversion from 'FLOAT' to 'int', possible loss of data
+  Animation.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\animation.cpp(21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\animation.cpp(45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\animation.cpp(54): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\animation.cpp(83): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+  Arrow.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  Bat.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\bat.cpp(14): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\bat.cpp(18): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\bat.cpp(26): warning C4305: 'argument': truncation from 'double' to 'float'
+  Brick.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  Cell.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  Collision.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\collision.cpp(18): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\collision.cpp(20): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\collision.cpp(23): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\collision.cpp(25): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\collision.cpp(64): warning C4244: '=': conversion from 'LONG' to 'float', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\collision.cpp(65): warning C4244: '=': conversion from 'LONG' to 'float', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\collision.cpp(69): warning C4244: '=': conversion from 'LONG' to 'float', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\collision.cpp(70): warning C4244: '=': conversion from 'LONG' to 'float', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\collision.cpp(75): warning C4244: '=': conversion from 'LONG' to 'float', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\collision.cpp(76): warning C4244: '=': conversion from 'LONG' to 'float', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\collision.cpp(80): warning C4244: '=': conversion from 'LONG' to 'float', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\collision.cpp(81): warning C4244: '=': conversion from 'LONG' to 'float', possible loss of data
+  dsutil.cpp
+  Game.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\game.cpp(79): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\game.cpp(147): warning C4244: 'argument': conversion from 'float' to 'DWORD', possible loss of data
+  Graphic.cpp
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\graphic.cpp(171): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Grid.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\grid.cpp(79): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\grid.cpp(80): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\grid.cpp(81): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\grid.cpp(82): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\grid.cpp(107): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\grid.cpp(108): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\grid.cpp(109): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\grid.cpp(110): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  Guard.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  Keyboard.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  Map.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\map.cpp(122): warning C4244: 'initializing': conversion from 'FLOAT' to 'int', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\map.cpp(123): warning C4244: 'initializing': conversion from 'FLOAT' to 'int', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\map.cpp(128): warning C4244: 'initializing': conversion from 'FLOAT' to 'int', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\map.cpp(129): warning C4244: 'initializing': conversion from 'FLOAT' to 'int', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\map.cpp(176): warning C4244: 'argument': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\map.cpp(210): warning C4244: 'argument': conversion from 'FLOAT' to 'int', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\map.cpp(211): warning C4244: 'argument': conversion from 'FLOAT' to 'int', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\map.cpp(212): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\map.cpp(213): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  Map3D.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\map3d.cpp(122): warning C4244: 'initializing': conversion from 'FLOAT' to 'int', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\map3d.cpp(123): warning C4244: 'initializing': conversion from 'FLOAT' to 'int', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\map3d.cpp(128): warning C4244: 'initializing': conversion from 'FLOAT' to 'int', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\map3d.cpp(129): warning C4244: 'initializing': conversion from 'FLOAT' to 'int', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\map3d.cpp(143): warning C4244: 'initializing': conversion from 'FLOAT' to 'int', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\map3d.cpp(144): warning C4244: 'initializing': conversion from 'FLOAT' to 'int', possible loss of data
+  MapObject.cpp
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\mapobject.cpp(6): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\mapobject.cpp(7): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\mapobject.cpp(8): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\mapobject.cpp(9): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+  MapObjectGroup.cpp
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\mapobjectgroup.cpp(9): warning C4018: '<': signed/unsigned mismatch
+  Object.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\object.cpp(28): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\object.cpp(29): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\object.cpp(30): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\object.cpp(31): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\object.cpp(44): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\object.cpp(45): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\object.cpp(46): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\object.cpp(47): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+  Generating Code...
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\game.cpp(74): warning C4715: 'Game::InitWindow': not all control paths return a value
+  Compiling...
+  ObjectManager.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\objectmanager.cpp(167): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  pendulum.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  PointMap.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  Scene.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  Sound.cpp
+  Sprite.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\sprite.cpp(54): warning C4244: 'return': conversion from 'LONG' to 'float', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\sprite.cpp(58): warning C4244: 'return': conversion from 'LONG' to 'float', possible loss of data
+  SpriteSheet.cpp
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\spritesheet.cpp(66): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\spritesheet.cpp(67): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\spritesheet.cpp(68): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\spritesheet.cpp(69): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\spritesheet.cpp(84): warning C4244: '=': conversion from 'double' to 'FLOAT', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\spritesheet.cpp(85): warning C4244: '=': conversion from 'double' to 'FLOAT', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\spritesheet.cpp(97): warning C4244: '=': conversion from 'double' to 'FLOAT', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\spritesheet.cpp(98): warning C4244: '=': conversion from 'double' to 'FLOAT', possible loss of data
+  Stage.cpp
+  Text.cpp
+  TileSet.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  tinystr.cpp
+  tinyxml.cpp
+  tinyxmlerror.cpp
+  tinyxmlparser.cpp
+  Viewport.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\viewport.cpp(113): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\viewport.cpp(114): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\viewport.cpp(115): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\viewport.cpp(116): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\viewport.cpp(138): warning C4244: '=': conversion from 'int' to 'FLOAT', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\viewport.cpp(145): warning C4244: '=': conversion from 'int' to 'FLOAT', possible loss of data
+  WinMain.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\winmain.cpp(15): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+  Generating Code...
+  LINK : C:\Users\HaiApple.Com\Desktop\AladdinGameC\AladdiGameC\Debug\AladdiGameC.exe not found or not built by the last incremental link; performing full link
+  AladdiGameC.vcxproj -> C:\Users\HaiApple.Com\Desktop\AladdinGameC\AladdiGameC\Debug\AladdiGameC.exe

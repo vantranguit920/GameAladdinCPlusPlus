@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Animations>
+  <Animation name="oppen" imagePath="Brick.png" width="85" height="10">
+    <sprite n="1.png" x="139" y="1" w="36" h="33" pX="0.5" pY="0.5"/>
+    <sprite n="2.png" x="177" y="1" w="35" h="33" pX="0.5" pY="0.5"/>
+
+    <sprite n="3.png" x="97" y="1" w="40" h="31" pX="0.5" pY="0.5"/>
+    <sprite n="4.png" x="52" y="1" w="43" h="31" pX="0.5" pY="0.5"/>
+    <sprite n="5.png" x="1" y="1" w="49" h="31" pX="0.5" pY="0.5"/>
+  </Animation>
+  <Animation name="close" imagePath="Brick.png" width="85" height="10">
+    <sprite n="5.png" x="1" y="1" w="49" h="31" pX="0.5" pY="0.5"/>
+    <sprite n="4.png" x="52" y="1" w="43" h="31" pX="0.5" pY="0.5"/>
+    <sprite n="3.png" x="97" y="1" w="40" h="31" pX="0.5" pY="0.5"/>
+
+    <sprite n="2.png" x="177" y="1" w="35" h="33" pX="0.5" pY="0.5"/>
+    <sprite n="1.png" x="139" y="1" w="36" h="33" pX="0.5" pY="0.5"/>
+  </Animation>
+</Animations>

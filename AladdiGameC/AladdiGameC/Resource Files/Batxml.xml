@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:28db1dbe43a840f96a8d8ef414889f92:af7ca5f87918d21c59c3e0c0e07c4293:239cdb189fee9ca16c1923bff4bfbe0f$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="Batxml.png" width="124" height="116">
+    <sprite n="Bat_01.png" x="57" y="18" w="7" h="16" pX="0.5" pY="0.5"/>
+    <sprite n="Bat_02.png" x="98" y="18" w="21" h="22" pX="0.5" pY="0.5"/>
+    <sprite n="Bat_03.png" x="1" y="42" w="19" h="23" pX="0.5" pY="0.5"/>
+    <sprite n="Bat_04.png" x="40" y="1" w="21" h="14" pX="0.47619" pY="0.642857"/>
+    <sprite n="Bat_06.png" x="99" y="1" w="24" h="15" pX="0.541667" pY="0.666667"/>
+    <sprite n="Bat_07.png" x="22" y="42" w="13" h="23" pX="0.461538" pY="0.782609"/>
+    <sprite n="Bat_08.png" x="66" y="18" w="30" h="17" pX="0.5" pY="0.705882"/>
+    <sprite n="Bat_09.png" x="23" y="18" w="32" h="16" pX="0.5" pY="0.3125"/>
+    <sprite n="Bat_10.png" x="37" y="42" w="8" h="25" pX="0.5" pY="0.12"/>
+    <sprite n="Bat_11.png" x="1" y="18" w="20" h="16" pX="0.5" pY="0.25"/>
+    <sprite n="Bat_12.png" x="63" y="1" w="34" h="14" pX="0.529412" pY="0.714286"/>
+    <sprite n="Bat_13.png" x="47" y="42" w="51" h="28" pX="0.5" pY="0.5"/>
+    <sprite n="Bat_15.png" x="22" y="76" w="18" h="35" pX="0.5" pY="0.5"/>
+    <sprite n="Bat_16.png" x="42" y="76" w="20" h="36" pX="0.5" pY="0.5"/>
+    <sprite n="Bat_17.png" x="86" y="76" w="12" h="39" pX="0.5" pY="0.5"/>
+    <sprite n="Bat_25.png" x="1" y="1" w="13" h="12" pX="0.5" pY="0.5"/>
+    <sprite n="Bat_26.png" x="16" y="1" w="22" h="13" pX="0.5" pY="0.5"/>
+    <sprite n="Bat_27.png" x="100" y="42" w="23" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="Bat_28.png" x="64" y="76" w="20" h="37" pX="0.5" pY="0.5"/>
+    <sprite n="Bat_29.png" x="1" y="76" w="19" h="33" pX="0.5" pY="0.5"/>
+</TextureAtlas>

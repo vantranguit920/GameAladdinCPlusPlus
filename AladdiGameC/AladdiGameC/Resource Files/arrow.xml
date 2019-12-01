@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Animations>
+<Animation imagePath="arrow.png" width="63" height="128">
+    <sprite n="1a.png" x="1" y="107" w="23" h="20" pX="0" pY="0"/>
+    <sprite n="2a.png" x="36" y="104" w="23" h="23" pX="0" pY="0"/>
+    <sprite n="3a.png" x="36" y="74" w="26" h="28" pX="0" pY="0"/>
+    <sprite n="4a.png" x="1" y="74" w="33" h="31" pX="0" pY="0"/>
+    <sprite n="5a.png" x="1" y="38" w="42" h="34" pX="0" pY="0"/>
+    <sprite n="6a.png" x="1" y="1" w="49" h="35" pX="0" pY="0"/>
+    <sprite n="7a.png" x="1" y="38" w="42" h="34" pX="0" pY="0"/>
+    <sprite n="8a.png" x="1" y="74" w="33" h="31" pX="0" pY="0"/>
+    <sprite n="9a.png" x="36" y="74" w="26" h="28" pX="0" pY="0"/>
+    <sprite n="10a.png" x="36" y="104" w="23" h="23" pX="0" pY="0"/>
+    <sprite n="11a.png" x="1" y="107" w="23" h="20" pX="0" pY="0"/>
+  </Animation>
+  </Animations>

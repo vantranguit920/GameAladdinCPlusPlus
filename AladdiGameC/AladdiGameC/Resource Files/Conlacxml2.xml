@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:843dcab341dfcbc0749b5d54064d71a4:814fa2fa1ca596844052a857121b39be:7b025bbe32fc82dcf5494526358acf7f$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="Conlacxml2.png" width="121" height="183">
+    <sprite n="Conlacs_01.png" x="70" y="18" w="47" h="15" pX="0" pY="0" r="y"/>
+    <sprite n="Conlacs_02.png" x="70" y="1" w="50" h="15" pX="0" pY="0" r="y"/>
+    <sprite n="Conlacs_03.png" x="68" y="70" w="52" h="15" pX="0" pY="0" r="y"/>
+    <sprite n="Conlacs_04.png" x="1" y="102" w="56" h="16" pX="0" pY="0" r="y"/>
+    <sprite n="Conlacs_05.png" x="1" y="122" w="16" h="60" pX="0" pY="0"/>
+    <sprite n="Conlacs_06.png" x="1" y="52" w="65" h="18" pX="0" pY="0" r="y"/>
+    <sprite n="Conlacs_07.png" x="1" y="1" w="67" h="21" pX="0" pY="0" r="y"/>
+    <sprite n="Conlacs_08.png" x="1" y="24" w="65" h="26" pX="0" pY="0" r="y"/>
+    <sprite n="Conlacs_09.png" x="1" y="72" w="63" h="28" pX="0" pY="0" r="y"/>
+    <sprite n="Conlacs_10.png" x="19" y="122" w="30" h="59" pX="0" pY="0"/>
+    <sprite n="Conlacs_11.png" x="51" y="122" w="31" h="57" pX="0" pY="0"/>
+    <sprite n="Conlacs_12.png" x="84" y="122" w="32" h="56" pX="0" pY="0"/>
+    <sprite n="Conlacs_13.png" x="66" y="87" w="53" h="33" pX="0" pY="0" r="y"/>
+    <sprite n="Conlacs_14.png" x="68" y="35" w="52" h="33" pX="0" pY="0" r="y"/>
+</TextureAtlas>

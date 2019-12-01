@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Animations>
+  <Animation name="fly"  width="85" height="10">
+    <sprite pY="0.5" pX="0.5" h="16" w="7" y="18" x="57" n="Bat_01.png"/>
+
+    <sprite pY="0.5" pX="0.5" h="22" w="21" y="18" x="98" n="Bat_02.png"/>
+
+    <sprite pY="0.5" pX="0.5" h="23" w="19" y="42" x="1" n="Bat_03.png"/>
+
+    <sprite pY="0.642857" pX="0.47619" h="14" w="21" y="1" x="40" n="Bat_04.png"/>
+
+    <sprite pY="0.666667" pX="0.541667" h="15" w="24" y="1" x="99" n="Bat_06.png"/>
+
+    <sprite pY="0.782609" pX="0.461538" h="23" w="13" y="42" x="22" n="Bat_07.png"/>
+
+    <sprite pY="0.705882" pX="0.5" h="17" w="30" y="18" x="66" n="Bat_08.png"/>
+
+    <sprite pY="0.3125" pX="0.5" h="16" w="32" y="18" x="23" n="Bat_09.png"/>
+
+    <sprite pY="0.12" pX="0.5" h="25" w="8" y="42" x="37" n="Bat_10.png"/>
+
+    <sprite pY="0.25" pX="0.5" h="16" w="20" y="18" x="1" n="Bat_11.png"/>
+
+    <sprite pY="0.714286" pX="0.529412" h="14" w="34" y="1" x="63" n="Bat_12.png"/>
+
+    <sprite pY="0.5" pX="0.5" h="28" w="51" y="42" x="47" n="Bat_13.png"/>
+
+    <sprite pY="0.5" pX="0.5" h="35" w="18" y="76" x="22" n="Bat_15.png"/>
+
+    <sprite pY="0.5" pX="0.5" h="36" w="20" y="76" x="42" n="Bat_16.png"/>
+
+    <sprite pY="0.5" pX="0.5" h="39" w="12" y="76" x="86" n="Bat_17.png"/>
+
+    <sprite pY="0.5" pX="0.5" h="12" w="13" y="1" x="1" n="Bat_25.png"/>
+
+    <sprite pY="0.5" pX="0.5" h="13" w="22" y="1" x="16" n="Bat_26.png"/>
+
+    <sprite pY="0.5" pX="0.5" h="32" w="23" y="42" x="100" n="Bat_27.png"/>
+
+    <sprite pY="0.5" pX="0.5" h="37" w="20" y="76" x="64" n="Bat_28.png"/>
+
+    <sprite pY="0.5" pX="0.5" h="33" w="19" y="76" x="1" n="Bat_29.png"/>
+  </Animation>
+</Animations>

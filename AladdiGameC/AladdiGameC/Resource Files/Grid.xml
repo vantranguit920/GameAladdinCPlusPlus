@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Grid>
+  <Cell x="0" y="0" w="250" h="250" numobject="0" />
+  <Cell x="0" y="1" w="250" h="250" numobject="0" />
+  <Cell x="0" y="2" w="250" h="250" numobject="0" />
+  <Cell x="0" y="3" w="250" h="250" numobject="0" />
+  <Cell x="0" y="4" w="250" h="250" numobject="0" />
+  <Cell x="0" y="5" w="250" h="250" numobject="0" />
+  <Cell x="0" y="6" w="250" h="250" numobject="0" />
+  <Cell x="0" y="7" w="250" h="250" numobject="0" />
+  <Cell x="1" y="0" w="250" h="250" numobject="0" />
+  <Cell x="1" y="1" w="250" h="250" numobject="0" />
+
+  <Cell x="1" y="2" w="250" h="250" numobject="0" />
+
+  <Cell x="1" y="2" w="250" h="250" numobject="3">
+    <object name="Helit" x="615" y="404" w="28" h="31" id="169" />
+    <object name="Helit" x="515" y="271" w="28" h="31" id="106" />
+    <object name="Helit" x="615" y="404" w="28" h="31" id="171" />
+  </Cell>
+
+  <Cell x="1" y="3" w="250" h="250" numobject="0" />
+  <Cell x="1" y="4" w="250" h="250" numobject="0" />
+  <Cell x="1" y="5" w="250" h="250" numobject="0" />
+  <Cell x="1" y="6" w="250" h="250" numobject="0" />
+  <Cell x="1" y="7" w="250" h="250" numobject="0" />
+  <Cell x="2" y="0" w="250" h="250" numobject="1">
+    <object name="Helit" x="215" y="584" w="28" h="31" id="106" alow="1" />
+  </Cell>
+  <Cell x="2" y="1" w="250" h="250" numobject="2">
+    <object name="Helit" x="315" y="584" w="28" h="31" id="169" alow="1" />
+    <object name="Helit" x="415" y="584" w="28" h="31" id="171" alow="0" />
+  </Cell>
+  <Cell x="2" y="2" w="250" h="250" numobject="1">
+    <object name="Helit" x="515" y="584" w="28" h="31" id="172" alow="0" />
+  </Cell>
+  <Cell x="2" y="3" w="250" h="250" numobject="0" />
+  <Cell x="2" y="4" w="250" h="250" numobject="0" />
+  <Cell x="2" y="5" w="250" h="250" numobject="0" />
+  <Cell x="2" y="6" w="250" h="250" numobject="0" />
+  <Cell x="2" y="7" w="250" h="250" numobject="0" />
+  <Cell x="3" y="0" w="250" h="250" numobject="0" />
+  <Cell x="3" y="1" w="250" h="250" numobject="0" />
+  <Cell x="3" y="2" w="250" h="250" numobject="0" />
+  <Cell x="3" y="3" w="250" h="250" numobject="0" />
+  <Cell x="3" y="4" w="250" h="250" numobject="0" />
+  <Cell x="3" y="5" w="250" h="250" numobject="0" />
+  <Cell x="3" y="6" w="250" h="250" numobject="0" />
+  <Cell x="3" y="7" w="250" h="250" numobject="0" />
+</Grid>
