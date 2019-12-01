@@ -52,6 +52,7 @@ public:
 
 	//Khung va chạm
 	virtual RECT GetBound();
+	virtual RECT GetBound2();
 	virtual void SetBound(float width, float height);
 	virtual void SetBound(RECT bound);
 	RECT GetBoard(D3DXVECTOR2 distance);

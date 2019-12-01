@@ -39,26 +39,27 @@ void ObjectManager::Init(Graphic* graphic)
 	spriteBat = new Sprite(graphic, "./Resource Files/Batxml.png", D3DCOLOR_XRGB(163, 73, 164));
 	infoBat = new SpriteSheet("./Resource Files/Batsprite.xml");
 	//
-	pendu = new pendulum(spritePendu, infoPendu, D3DXVECTOR2(400, 621));
+	pendu = new pendulum(spritePendu, infoPendu, D3DXVECTOR2(400, 300));
 
 	
 	//
-	brick = new Brick(spriteBrick, infoBrick, D3DXVECTOR2(350, 621));
+	
 	//
-	arrow = new Arrow(spriteArrow, infoArrow, D3DXVECTOR2(320, 550));
-	brick = new Brick(spriteBrick, infoBrick, D3DXVECTOR2(350,621));
+	arrow = new Arrow(spriteArrow, infoArrow, D3DXVECTOR2(420, 300));
+
 	//
-	brick2 = new Brick(spriteBrick, infoBrick, D3DXVECTOR2(300, 621));
+	
 	point = new PointMap();
 	//
-	brick2->setstate(Brick::close);
+	
 	aladin = new Aladdin(spriteAladdin, infoAlddin);
 
-	guard = new Guard(spriteGuard, infoGuard, D3DXVECTOR2(500, 551), aladin);
+	guard = new Guard(spriteGuard, infoGuard, D3DXVECTOR2(800, 50), aladin);
 
 	bat = new Bat(spriteBat, infoBat, D3DXVECTOR2(200, 621), aladin);
 	viewport = new Viewport(0, 1152);
 	map = new Map(graphic, MapXML, TileSetPNG);
+	map->WriteGrid(map->grid);
 	map2 = new Map(graphic, MapXML2, TileSetPNG);
 	map3 = new Map3D(graphic, MapXML3, TileSetPNG3);
 	grid = new Grid();
@@ -70,7 +71,7 @@ void ObjectManager::Init(Graphic* graphic)
 	}
 	TiXmlElement* root = doc.RootElement();
 	ReadGrid(root, grid);
-	objects = grid->GetCell(2, 1)->objects;
+	objects = grid->GetCell(2, 2)->objects;
 	prePosView = viewport->GetPosition();
 	prePosAla = point->GetPosition();
 
@@ -89,15 +90,24 @@ void ObjectManager::Update(float dt, Keyboard* keyboard)
 	}
 
 	point->Update(dt, keyboard);
+	for (size_t i = 0; i < listWall.size(); i++)
+	{
+		D3DXVECTOR2 disMan = aladin->Distance(dt);
+		aladin->OnCollision(listWall.at(i), disMan, disMan);
+
+		//Kiểm tra cổng
+		
+
+		listWall.at(i)->Update(dt, keyboard);
+	}
 	
 	aladin->Update(dt, keyboard);
 
-	printf("%f\n", aladin->GetPosition().x);
+	printf("%f\n", aladin->GetPosition().y);
 	//
 	//brick->SetPosition(D3DXVECTOR2(aladin->GetPosition().x,aladin->GetPosition().y-45));
 
-	brick->Update(dt, keyboard);
-	brick2->Update(dt, keyboard);
+	
 
 	pendu->Update(dt, keyboard);
 
@@ -118,8 +128,7 @@ void ObjectManager::Render()
 {
 	map->Render(viewport);
 
-	brick->Render(viewport);
-	brick2->Render(viewport);
+	
 	pendu->Render(viewport);
 
 
@@ -143,9 +152,10 @@ void ObjectManager::ReadGrid(TiXmlElement * root, Grid * grid)
 
 	while (cell != NULL)
 	{
-		float x, y, numobject;
+		float x, y, numobject,w,h;
 		cell->QueryFloatAttribute("x", &x);
 		cell->QueryFloatAttribute("y", &y);
+		
 		cell->QueryFloatAttribute("numobject", &numobject);
 		if (numobject > 0) {
 			TiXmlElement *obj = cell->FirstChildElement();
@@ -156,15 +166,36 @@ void ObjectManager::ReadGrid(TiXmlElement * root, Grid * grid)
 				obj->QueryIntAttribute("alow", &alow);
 				obj->QueryFloatAttribute("x", &posX);
 				obj->QueryFloatAttribute("y", &posY);
-				Brick* bat2 = new Brick(spriteBrick, infoBrick, D3DXVECTOR2(posX, posY));
-				bat2->SetName(name);
-				if (alow) {
-					bat2->setstate(Brick::oppen);
+				obj->QueryFloatAttribute("w", &w);
+				obj->QueryFloatAttribute("h", &h);
+
+				if (name == "Helit") {
+					Brick* brick = new Brick(spriteBrick, infoBrick, D3DXVECTOR2(posX, posY));
+					brick->SetName(name);
+					if (alow) {
+						brick->setstate(Brick::oppen);
+					}
+					else {
+						brick->setstate(Brick::close);
+					}
+					grid->GetCell(x, y)->Add(brick);
 				}
-				else {
-					bat2->setstate(Brick::close);
+				else if(name == "Wall")
+				{
+					Object* wall = new Object();
+					wall->SetName(name);
+					wall->SetTag(name);
+					wall->SetPosition(D3DXVECTOR2(posX, posY));
+					wall->SetPositionStart(D3DXVECTOR2(posX, posY));
+					wall->SetBound(w, h);
+					grid->GetCell(x, y)->Add(wall);
+					listWall.push_back(wall);
+
 				}
-				grid->GetCell(x, y)->Add(bat2);
+				
+
+
+
 				obj = obj->NextSiblingElement();
 			}
 		}

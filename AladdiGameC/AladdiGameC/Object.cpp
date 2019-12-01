@@ -31,7 +31,13 @@ RECT Object::GetBound()
 	bound.bottom = bound.top - height;
 	return bound;
 }
-
+RECT Object::GetBound2() {
+	bound.left = position.x - width / 2;
+	bound.right = bound.left + width;
+	bound.top = position.y + height;
+	bound.bottom = position.y;
+	return bound;
+}
 void Object::SetBound(RECT bound)
 {
 	this->bound = bound;

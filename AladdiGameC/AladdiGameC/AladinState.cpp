@@ -71,7 +71,14 @@ void AladinState::StandState(Keyboard *key) {
 				}
 				else
 				{
-					this->state = State::Standing;
+					if (Aladdin->GetVelocity().y == -2) {
+						this->state = State::fall;
+					}
+					else {
+						Aladdin->SetVelocityY(-2);
+						this->state = State::Standing;
+					}
+					
 				}
 
 
@@ -108,8 +115,8 @@ void AladinState::fallState(Keyboard* key) {
 		this->state = State::fall;
 	}*/
 
-	if (Aladdin->GetPosition().y <= startJum) {
-		Aladdin->SetVelocityY(0);
+	if (Aladdin->GetVelocity().y==0) {
+		
 		this->state = State::Standing;
 	}
 	

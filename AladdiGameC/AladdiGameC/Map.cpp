@@ -101,12 +101,27 @@ void Map::ReadXML(Graphic* graphic, const char *path)
 		// strtok nhận vào NULL, để nó có thể tiếp tục tìm kiếm từ vị trí kết thúc trước đó.
 		token = strtok(NULL, ",");
 	}
-	TiXmlElement* objectGroup = layer->NextSiblingElement();
-	if (objectGroup != NULL) {
+	TiXmlElement* objectGroup =NULL;
+
+	for (objectGroup = layer->NextSiblingElement(); objectGroup != NULL; objectGroup = objectGroup->NextSiblingElement())
+	{
 		MapObjectGroup *Enemy = new MapObjectGroup(objectGroup);
 		objectGroups.push_back(Enemy);
 		numObjectGroups++;
 	}
+
+	/*while (objectGroup != NULL)
+	{
+		MapObjectGroup *Enemy = new MapObjectGroup(objectGroup);
+		objectGroups.push_back(Enemy);
+		numObjectGroups++;
+		objectGroup->NextSiblingElement();
+	}*/
+	/*if (objectGroup != NULL) {
+		MapObjectGroup *Enemy = new MapObjectGroup(objectGroup);
+		objectGroups.push_back(Enemy);
+		numObjectGroups++;
+	}*/
 	
 
 	

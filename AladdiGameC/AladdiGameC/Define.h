@@ -29,7 +29,7 @@ namespace Define
 	const float FallAcceleration = 0.5f;
 
 	//Distance
-	const float JumpMax = 120.0f;
+	const float JumpMax = 150.0f;
 	const float JumpMin = 50.0f;
 	const float GlideMax = 100.0f;
 	const float GlideMin = 30.f;

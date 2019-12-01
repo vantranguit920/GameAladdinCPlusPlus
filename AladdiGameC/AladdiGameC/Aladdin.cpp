@@ -1,4 +1,4 @@
-#include "Aladdin.h"
+﻿#include "Aladdin.h"
 
 
 
@@ -16,7 +16,8 @@ Aladdin::Aladdin(Sprite *spAla, SpriteSheet *ifoAla)
 	animAla = new AladdinAnimation(ifoAla);
 	stateAla = new AladinState(this);
 	position = D3DXVECTOR2(350, 550);
-	SetBound(30, 34);
+	SetBound(20, 34);
+	velocity = D3DXVECTOR2(0, -2);
 	
 }
 
@@ -68,7 +69,47 @@ void Aladdin::ChangeAnimation(float dt, Keyboard* key) {
 
 }
 void Aladdin::OnCollision(Object *obj, D3DXVECTOR2 distance, D3DXVECTOR2 disAla) {
+	
 
+	RECT board = this->GetBoard(distance);
+
+	//Nếu other trong vùng di chuyển
+	if (Collision::isCollision(board, obj->GetBound()))
+	{
+		if (!Collision::isNested(GetBound2(), obj->GetBound()))
+		{
+			//Lấy cạnh va chạm
+			D3DXVECTOR2 sideCollision;
+
+			//Lấy thời gian va chạm
+			float time = Collision::CollisionAABB(GetBound2(), obj->GetBound(), distance, sideCollision);
+
+			//Bé hơn 1 thì có va chạm
+			if (time < 1.0f)
+			{
+				if (sideCollision.x != 0.0f)
+				{
+					/*position.x += disAla.x * time;
+					velocity.x = 0;*/
+
+
+				}
+				else if (sideCollision.y == -1.0f)	//va chạm trên
+				{
+
+				}
+				else if (sideCollision.y == 1.0f)	//va chạm dưới
+				{
+					position.y += disAla.y * time;
+					velocity.y = 0;
+
+
+				}
+			}
+			
+		}
+		
+	}
 }
 
 void Aladdin::Update(float dt, Keyboard* key) {

@@ -45,8 +45,7 @@ protected:
 	Sprite *spriteAladdin;
 	SpriteSheet *infoAlddin;
 
-	Brick *brick;
-	Brick *brick2;
+	
 	Sprite *spriteBrick;
 	SpriteSheet *infoBrick;
 

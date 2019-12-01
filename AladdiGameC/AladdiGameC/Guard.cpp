@@ -37,21 +37,16 @@ void Guard::ChangeAnimation(Keyboard* key){
 void Guard::Update(float dt, Keyboard* key){
 
 	D3DXVECTOR2 posAla = aladdin->GetPosition();
-	//D3DXVECTOR2 posViewPort = viewport->GetPosition();
+	if (abs(aladdin->GetPosition().x - position.x) < 150 && abs(aladdin->GetPosition().x - position.x) > 50) {
+		this->state = GuardState::GuillotineKnife;
+
+	}
+	else {
+		this->state = GuardState::Common;
+	}
 
 	
-	if (timeout >= 0.1f) {
-
-	/*	float hoangdo = posAla.x - this->position.x;
-		float tungdo = posAla.y - this->position.y;
-		if (hoangdo < -20.0f || hoangdo > 20.0f) {
-			this->SetState(Common);
-		}
-		else {
-			this->SetState(GuillotineKnife);
-		}*/
-		timeout = 0;
-	}
+	
 	timeout += dt;
 	ChangeAnimation(key);
 	Object::Update(dt, key);

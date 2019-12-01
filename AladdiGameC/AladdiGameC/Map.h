@@ -17,14 +17,14 @@ protected:
 	int width, height, tileWidth, tileHeight;
 	int _data[300][300];
 	int numObjectGroups;
-	Grid *grid;
+	
 	TileSet* tileSet;
 	vector<MapObjectGroup*> objectGroups;
 	char* pahtMapPNG;
 	D3DXVECTOR2 position;
 	
 public:
-
+	Grid *grid;
 	std::vector<Stage*> listStage;
 
 	Map();
