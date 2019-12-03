@@ -45,7 +45,18 @@ void ObjectManager::Init(Graphic* graphic)
 	//
 	spriteRodGuard = new Sprite(graphic, "./Resource Files/RodGuard.png", D3DCOLOR_XRGB(163, 73, 164));
 	infoRodGuard = new SpriteSheet("./Resource Files/RodGuard.xml");
+
 	//
+	spriteSpendThese = new Sprite(graphic, "./Resource Files/SpendThese.png", D3DCOLOR_XRGB(163, 73, 164));
+	infoSpendThese = new SpriteSheet("./Resource Files/SpendThese.xml");
+	//
+	spriteBonus = new Sprite(graphic, "./Resource Files/BonusLevel.png", D3DCOLOR_XRGB(163, 73, 164));
+	infoBonus = new SpriteSheet("./Resource Files/BonusLevel.xml");
+	//
+
+	spriteBonusLevel = new Sprite(graphic, "./Resource Files/BonusLevel2.png", D3DCOLOR_XRGB(163, 73, 164));
+	infoBonusLevel = new SpriteSheet("./Resource Files/BonusLevel2.xml");
+
 	pendu = new pendulum(spritePendu, infoPendu, D3DXVECTOR2(400, 300));
 
 	
@@ -64,6 +75,9 @@ void ObjectManager::Init(Graphic* graphic)
 	guard = new Guard(spriteGuard, infoGuard, D3DXVECTOR2(800, 50), aladin);
 	skeleton = new Skeleton(spriteSkeleton, infoSkeleton, D3DXVECTOR2(800, 60), aladin);
 	rodGuard = new RodGuard(spriteRodGuard, infoRodGuard, D3DXVECTOR2(800, 233), aladin);
+	spendThese = new SpendThese(spriteSpendThese, infoSpendThese, D3DXVECTOR2(350, 283), aladin);
+	bonus = new Bonus(spriteBonus, infoBonus, D3DXVECTOR2(400, 283), aladin);
+	bonusLevel = new BonusLevel(spriteBonusLevel, infoBonusLevel, D3DXVECTOR2(400, 300), aladin);
 
 	bat = new Bat(spriteBat, infoBat, D3DXVECTOR2(200, 621), aladin);
 	viewport = new Viewport(0, 1152);
@@ -112,7 +126,7 @@ void ObjectManager::Update(float dt, Keyboard* keyboard)
 	
 	aladin->Update(dt, keyboard);
 
-	printf("%f\n", aladin->GetPosition().y);
+	printf("x= %f   y = %f\n", aladin->GetPosition().x, aladin->GetPosition().y);
 	//
 	//brick->SetPosition(D3DXVECTOR2(aladin->GetPosition().x,aladin->GetPosition().y-45));
 
@@ -125,6 +139,10 @@ void ObjectManager::Update(float dt, Keyboard* keyboard)
 	guard->Update(dt, keyboard);
 	rodGuard->Update(dt, keyboard);
 	skeleton->Update(dt, keyboard);
+	spendThese->Update(dt, keyboard);
+	bonus->Update(dt, keyboard);
+	bonusLevel->Update(dt, keyboard);
+
 	bat->Update(dt, keyboard);
 	for (auto o : objects) {
 		o->Update(dt, keyboard);
@@ -151,6 +169,9 @@ void ObjectManager::Render()
 	guard->Render(viewport);
 	skeleton->Render(viewport);
 	rodGuard->Render(viewport);
+	spendThese->Render(viewport);
+	bonus->Render(viewport);
+	bonusLevel->Render(viewport);
 
 	aladin->Render(viewport);
 	bat->Render(viewport);

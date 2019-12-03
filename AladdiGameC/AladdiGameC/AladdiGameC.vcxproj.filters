@@ -115,6 +115,15 @@
     <ClCompile Include="RodGuard.cpp">
       <Filter>Map</Filter>
     </ClCompile>
+    <ClCompile Include="SpendThese.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Bonus.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="BonusLevel.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h">
@@ -226,6 +235,15 @@
       <Filter>Map</Filter>
     </ClInclude>
     <ClInclude Include="RodGuard.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="SpendThese.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Bonus.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="BonusLevel.h">
       <Filter>Map</Filter>
     </ClInclude>
   </ItemGroup>
