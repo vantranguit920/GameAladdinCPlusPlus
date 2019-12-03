@@ -109,6 +109,12 @@
     <ClCompile Include="Guard.cpp">
       <Filter>Map</Filter>
     </ClCompile>
+    <ClCompile Include="Skeleton.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="RodGuard.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h">
@@ -214,6 +220,12 @@
       <Filter>Stage</Filter>
     </ClInclude>
     <ClInclude Include="Guard.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Skeleton.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="RodGuard.h">
       <Filter>Map</Filter>
     </ClInclude>
   </ItemGroup>

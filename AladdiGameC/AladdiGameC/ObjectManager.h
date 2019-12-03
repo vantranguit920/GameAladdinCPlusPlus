@@ -14,6 +14,8 @@
 #include "Map3D.h"
 #include "PointMap.h"
 #include "Guard.h"
+#include "Skeleton.h"
+#include "RodGuard.h"
 
 class ObjectManager
 {
@@ -60,6 +62,16 @@ protected:
 	Arrow* arrow;
 	Sprite* spriteArrow;
 	SpriteSheet* infoArrow;
+
+	RodGuard* rodGuard;
+	Sprite* spriteRodGuard;
+	SpriteSheet* infoRodGuard;
+
+	Skeleton* skeleton;
+	Sprite* spriteSkeleton;
+	SpriteSheet* infoSkeleton;
+
+
 
 	Bat *bat;
 	Sprite *spriteBat;

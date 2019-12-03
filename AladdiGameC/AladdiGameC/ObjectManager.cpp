@@ -33,11 +33,18 @@ void ObjectManager::Init(Graphic* graphic)
 	//
 	spriteArrow = new Sprite(graphic, "./Resource Files/arrow.png", D3DCOLOR_XRGB(163, 73, 164));
 	infoArrow = new SpriteSheet("./Resource Files/arrow.xml");
+	//
 	spriteGuard = new Sprite(graphic,"./Resource Files/Guard.png", D3DCOLOR_XRGB(163, 73, 164));
 	infoGuard = new SpriteSheet("./Resource Files/Guard.xml");
 	//
 	spriteBat = new Sprite(graphic, "./Resource Files/Batxml.png", D3DCOLOR_XRGB(163, 73, 164));
 	infoBat = new SpriteSheet("./Resource Files/Batsprite.xml");
+	//
+	spriteSkeleton = new Sprite(graphic, "./Resource Files/skeleton.png", D3DCOLOR_XRGB(163, 73, 164));
+	infoSkeleton = new SpriteSheet("./Resource Files/skeleton.xml");
+	//
+	spriteRodGuard = new Sprite(graphic, "./Resource Files/RodGuard.png", D3DCOLOR_XRGB(163, 73, 164));
+	infoRodGuard = new SpriteSheet("./Resource Files/RodGuard.xml");
 	//
 	pendu = new pendulum(spritePendu, infoPendu, D3DXVECTOR2(400, 300));
 
@@ -55,6 +62,8 @@ void ObjectManager::Init(Graphic* graphic)
 	aladin = new Aladdin(spriteAladdin, infoAlddin);
 
 	guard = new Guard(spriteGuard, infoGuard, D3DXVECTOR2(800, 50), aladin);
+	skeleton = new Skeleton(spriteSkeleton, infoSkeleton, D3DXVECTOR2(800, 60), aladin);
+	rodGuard = new RodGuard(spriteRodGuard, infoRodGuard, D3DXVECTOR2(800, 233), aladin);
 
 	bat = new Bat(spriteBat, infoBat, D3DXVECTOR2(200, 621), aladin);
 	viewport = new Viewport(0, 1152);
@@ -114,6 +123,8 @@ void ObjectManager::Update(float dt, Keyboard* keyboard)
 	pendu->Update(dt,keyboard);
 	arrow->Update(dt, keyboard);
 	guard->Update(dt, keyboard);
+	rodGuard->Update(dt, keyboard);
+	skeleton->Update(dt, keyboard);
 	bat->Update(dt, keyboard);
 	for (auto o : objects) {
 		o->Update(dt, keyboard);
@@ -138,6 +149,9 @@ void ObjectManager::Render()
 
 	arrow->Render(viewport);
 	guard->Render(viewport);
+	skeleton->Render(viewport);
+	rodGuard->Render(viewport);
+
 	aladin->Render(viewport);
 	bat->Render(viewport);
 	map2->Render(viewport);

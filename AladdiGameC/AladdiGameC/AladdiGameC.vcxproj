@@ -22,13 +22,13 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{0E9DBCF4-3E0B-4166-9CFB-F95ED615BE90}</ProjectGuid>
     <RootNamespace>AladdiGameC</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -140,7 +140,9 @@
     <ClCompile Include="ObjectManager.cpp" />
     <ClCompile Include="pendulum.cpp" />
     <ClCompile Include="PointMap.cpp" />
+    <ClCompile Include="RodGuard.cpp" />
     <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Skeleton.cpp" />
     <ClCompile Include="Sound.cpp" />
     <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="SpriteSheet.cpp" />
@@ -180,7 +182,9 @@
     <ClInclude Include="ObjectManager.h" />
     <ClInclude Include="pendulum.h" />
     <ClInclude Include="PointMap.h" />
+    <ClInclude Include="RodGuard.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="Skeleton.h" />
     <ClInclude Include="Sound.h" />
     <ClInclude Include="Sprite.h" />
     <ClInclude Include="SpriteSheet.h" />
