@@ -1,0 +1,1 @@
+chem1_01.png.png 3 17, chem1_02.png.png 58 4, chem1_03.png.png 113 11, chem1_04.png.png 175 21, chem1_05.png.png 309 4, chem1_06.png.png 3 17.

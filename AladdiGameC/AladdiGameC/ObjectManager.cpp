@@ -50,16 +50,19 @@ void ObjectManager::Init(Graphic* graphic)
 	spriteSpendThese = new Sprite(graphic, "./Resource Files/SpendThese.png", D3DCOLOR_XRGB(163, 73, 164));
 	infoSpendThese = new SpriteSheet("./Resource Files/SpendThese.xml");
 	//
-	spriteBonus = new Sprite(graphic, "./Resource Files/BonusLevel.png", D3DCOLOR_XRGB(163, 73, 164));
-	infoBonus = new SpriteSheet("./Resource Files/BonusLevel.xml");
+	spriteSavePosition = new Sprite(graphic, "./Resource Files/SavePosition.png", D3DCOLOR_XRGB(163, 73, 164));
+	infoSavePosition = new SpriteSheet("./Resource Files/SavePosition.xml");
 	//
-
 	spriteBonusLevel = new Sprite(graphic, "./Resource Files/BonusLevel2.png", D3DCOLOR_XRGB(163, 73, 164));
 	infoBonusLevel = new SpriteSheet("./Resource Files/BonusLevel2.xml");
+	//
+	spriteShop = new Sprite(graphic, "./Resource Files/Shop.png", D3DCOLOR_XRGB(163, 73, 164));
+	infoShop = new SpriteSheet("./Resource Files/Shop.xml");
+	//
+	spriteApple = new Sprite(graphic, "./Resource Files/apple.png", D3DCOLOR_XRGB(163, 73, 164));
+	infoApple = new SpriteSheet("./Resource Files/apple.xml");
 
 	pendu = new pendulum(spritePendu, infoPendu, D3DXVECTOR2(400, 300));
-
-	
 	//
 	
 	//
@@ -76,8 +79,10 @@ void ObjectManager::Init(Graphic* graphic)
 	skeleton = new Skeleton(spriteSkeleton, infoSkeleton, D3DXVECTOR2(800, 60), aladin);
 	rodGuard = new RodGuard(spriteRodGuard, infoRodGuard, D3DXVECTOR2(800, 233), aladin);
 	spendThese = new SpendThese(spriteSpendThese, infoSpendThese, D3DXVECTOR2(350, 283), aladin);
-	bonus = new Bonus(spriteBonus, infoBonus, D3DXVECTOR2(400, 283), aladin);
+	savePosition = new SavePosition(spriteSavePosition, infoSavePosition, D3DXVECTOR2(400, 283), aladin);
 	bonusLevel = new BonusLevel(spriteBonusLevel, infoBonusLevel, D3DXVECTOR2(400, 300), aladin);
+	shop = new Shop(spriteShop, infoShop, D3DXVECTOR2(400, 300), aladin);
+	apple = new Apple(spriteApple, infoApple, D3DXVECTOR2(266, 282), aladin);
 
 	bat = new Bat(spriteBat, infoBat, D3DXVECTOR2(200, 621), aladin);
 	viewport = new Viewport(0, 1152);
@@ -140,8 +145,10 @@ void ObjectManager::Update(float dt, Keyboard* keyboard)
 	rodGuard->Update(dt, keyboard);
 	skeleton->Update(dt, keyboard);
 	spendThese->Update(dt, keyboard);
-	bonus->Update(dt, keyboard);
+	savePosition->Update(dt, keyboard);
 	bonusLevel->Update(dt, keyboard);
+	shop->Update(dt, keyboard);
+	apple->Update(dt, keyboard);
 
 	bat->Update(dt, keyboard);
 	for (auto o : objects) {
@@ -170,8 +177,10 @@ void ObjectManager::Render()
 	skeleton->Render(viewport);
 	rodGuard->Render(viewport);
 	spendThese->Render(viewport);
-	bonus->Render(viewport);
+	savePosition->Render(viewport);
 	bonusLevel->Render(viewport);
+	shop->Render(viewport);
+	apple->Render(viewport);
 
 	aladin->Render(viewport);
 	bat->Render(viewport);

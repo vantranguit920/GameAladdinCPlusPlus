@@ -7,35 +7,35 @@
 #include "SpriteSheet.h"
 #include "Keyboard.h"
 
-class  Bonus :public Object
+class  SavePosition :public Object
 {
 protected:
-	Animation* BonusAnim;
+	Animation* SavePositionAnim;
 	Aladdin* aladdin;
 	Viewport* viewport;
 
 	float timeout = 0.0f;
 public:
-	Bonus();
-	Bonus(Sprite* spBonus, SpriteSheet* ifoBonus, D3DXVECTOR2 pos, Aladdin* aladdin);
-	~Bonus();
+	SavePosition();
+	SavePosition(Sprite* spSavePosition, SpriteSheet* ifoSavePosition, D3DXVECTOR2 pos, Aladdin* aladdin);
+	~SavePosition();
 
-	enum BonusState {
+	enum SavePositionState {
 		Show,
 		Hitted,
 		Destroy
 	};
 
-	BonusState state;
+	SavePositionState state;
 	void ChangeAnimation(Keyboard* key);
 
-	void OnCollision(Object* obj, D3DXVECTOR2 distance, D3DXVECTOR2 disBonus);
+	void OnCollision(Object* obj, D3DXVECTOR2 distance, D3DXVECTOR2 disSavePosition);
 
 	void Update(float dt, Keyboard* key);
 	void Render(Viewport* viewport);
 
 	void SetAllowDraw(bool allow);
-	void SetState(BonusState state);
+	void SetState(SavePositionState state);
 	void GetState();
 	bool GetAllowDraw();
 };

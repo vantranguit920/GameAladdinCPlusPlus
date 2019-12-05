@@ -17,8 +17,10 @@
 #include "Skeleton.h"
 #include "RodGuard.h"
 #include "SpendThese.h"
-#include "Bonus.h"
+#include "SavePosition.h"
 #include "BonusLevel.h"
+#include "Shop.h"
+#include "Apple.h"
 
 class ObjectManager
 {
@@ -78,13 +80,21 @@ protected:
 	Sprite* spriteSpendThese;
 	SpriteSheet* infoSpendThese;
 
-	Bonus* bonus;
-	Sprite* spriteBonus;
-	SpriteSheet* infoBonus;
+	SavePosition* savePosition;
+	Sprite* spriteSavePosition;
+	SpriteSheet* infoSavePosition;
 
 	BonusLevel* bonusLevel;
 	Sprite* spriteBonusLevel;
 	SpriteSheet* infoBonusLevel;
+
+	Shop* shop;
+	Sprite* spriteShop;
+	SpriteSheet* infoShop;
+
+	Apple* apple;
+	Sprite* spriteApple;
+	SpriteSheet* infoApple;
 
 	Bat *bat;
 	Sprite *spriteBat;

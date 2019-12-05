@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Animations>
+<Animation imagePath="apple.png" width="11" height="11">
+    <sprite n="font01_a.png" x="0" y="0" w="11" h="11"/>
+</Animation>
+</Animations>

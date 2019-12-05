@@ -34,12 +34,12 @@
     </Cell>
     <Cell x="1" y="1" w="250" h="250" numobject="3">
         <object name="Wall" x="295" y="274" w="107" h="16" id="3" alow="0" />
-        <object name="Wall" x="614" y="435" w="333" h="11" id="8" alow="0" />
         <object name="Wall" x="520" y="325" w="189" h="7" id="7" alow="0" />
+        <object name="Wall" x="614" y="435" w="333" h="11" id="8" alow="0" />
     </Cell>
     <Cell x="1" y="2" w="250" h="250" numobject="2">
-        <object name="Wall" x="614" y="435" w="333" h="11" id="8" alow="0" />
         <object name="Wall" x="520" y="325" w="189" h="7" id="7" alow="0" />
+        <object name="Wall" x="614" y="435" w="333" h="11" id="8" alow="0" />
     </Cell>
     <Cell x="1" y="3" w="250" h="250" numobject="1">
         <object name="Wall" x="614" y="435" w="333" h="11" id="8" alow="0" />
@@ -52,8 +52,8 @@
     <Cell x="2" y="1" w="250" h="250" numobject="0" />
     <Cell x="2" y="2" w="250" h="250" numobject="3">
         <object name="Helit" x="660" y="646" w="25" h="11" id="106" alow="0" />
-        <object name="Helit" x="565" y="582" w="28" h="12" id="172" alow="0" />
         <object name="Helit" x="544" y="697" w="28" h="13" id="171" alow="0" />
+        <object name="Helit" x="565" y="582" w="28" h="12" id="172" alow="0" />
     </Cell>
     <Cell x="2" y="3" w="250" h="250" numobject="0" />
     <Cell x="2" y="4" w="250" h="250" numobject="0" />

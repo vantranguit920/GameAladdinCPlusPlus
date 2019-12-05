@@ -118,10 +118,16 @@
     <ClCompile Include="SpendThese.cpp">
       <Filter>Map</Filter>
     </ClCompile>
-    <ClCompile Include="Bonus.cpp">
+    <ClCompile Include="BonusLevel.cpp">
       <Filter>Map</Filter>
     </ClCompile>
-    <ClCompile Include="BonusLevel.cpp">
+    <ClCompile Include="Shop.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="SavePosition.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Apple.cpp">
       <Filter>Map</Filter>
     </ClCompile>
   </ItemGroup>
@@ -240,10 +246,16 @@
     <ClInclude Include="SpendThese.h">
       <Filter>Map</Filter>
     </ClInclude>
-    <ClInclude Include="Bonus.h">
+    <ClInclude Include="BonusLevel.h">
       <Filter>Map</Filter>
     </ClInclude>
-    <ClInclude Include="BonusLevel.h">
+    <ClInclude Include="Shop.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="SavePosition.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Apple.h">
       <Filter>Map</Filter>
     </ClInclude>
   </ItemGroup>
