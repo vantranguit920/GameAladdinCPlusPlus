@@ -4,9 +4,9 @@
         <object name="Wall" x="1119" y="24" w="2234" h="36" id="2" alow="0" />
     </Cell>
     <Cell x="0" y="1" w="250" h="250" numobject="3">
-        <object name="Wall" x="409" y="242" w="138" h="14" id="5" alow="0" />
         <object name="Wall" x="1119" y="24" w="2234" h="36" id="2" alow="0" />
         <object name="Wall" x="705" y="227" w="454" h="12" id="6" alow="0" />
+        <object name="Wall" x="409" y="242" w="138" h="14" id="5" alow="0" />
     </Cell>
     <Cell x="0" y="2" w="250" h="250" numobject="3">
         <object name="Wall" x="1119" y="24" w="2234" h="36" id="2" alow="0" />

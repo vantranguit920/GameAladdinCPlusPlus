@@ -25,7 +25,7 @@ void Apple::ChangeAnimation(Keyboard* key) {
 		//AppleAnim->SetFrame(position, flipFlag, 20, 4, 17, false);
 		break;
 	case AppleState::Show:
-		AppleAnim->SetFrame(position, flipFlag, 20, 0, 0, false);
+		AppleAnim->SetFrame(position, flipFlag, 20, 0, 1, false);
 		break;
 
 	}
@@ -34,9 +34,7 @@ void Apple::ChangeAnimation(Keyboard* key) {
 void Apple::Update(float dt, Keyboard* key) {
 
 	D3DXVECTOR2 posAla = aladdin->GetPosition();
-	if (abs(aladdin->GetPosition().x - position.x) < 40) {
-		this->state = AppleState::Hitted;
-	}
+	
 
 	if (timeout >= 0.2f) {
 
