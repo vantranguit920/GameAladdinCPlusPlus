@@ -1,3 +1,22 @@
-﻿  Apple.cpp
+﻿  Fire.cpp
   C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  Game.cpp
+  C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+E:\Aladdina\GameAladdinCPlusPlus\AladdiGameC\AladdiGameC\Game.cpp(79,53): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+E:\Aladdina\GameAladdinCPlusPlus\AladdiGameC\AladdiGameC\Game.cpp(79,42): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+  ObjectManager.cpp
+E:\Aladdina\GameAladdinCPlusPlus\AladdiGameC\AladdiGameC\Game.cpp(147,15): warning C4244: 'argument': conversion from 'float' to 'DWORD', possible loss of data
+E:\Aladdina\GameAladdinCPlusPlus\AladdiGameC\AladdiGameC\Game.cpp(147,15): warning C4244: C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+E:\Aladdina\GameAladdinCPlusPlus\AladdiGameC\AladdiGameC\ObjectManager.cpp(233,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+E:\Aladdina\GameAladdinCPlusPlus\AladdiGameC\AladdiGameC\ObjectManager.cpp(233,20): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+E:\Aladdina\GameAladdinCPlusPlus\AladdiGameC\AladdiGameC\ObjectManager.cpp(243,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  Scene.cpp
+  WinMain.cpp
+E:\Aladdina\GameAladdinCPlusPlus\AladdiGameC\AladdiGameC\ObjectManager.cpp(243,20): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+E:\Aladdina\GameAladdinCPlusPlus\AladdiGameC\AladdiGameC\ObjectManager.cpp(243,20): warning C4244: C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+E:\Aladdina\GameAladdinCPlusPlus\AladdiGameC\AladdiGameC\ObjectManager.cpp(243,20): warning C4244: C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+E:\Aladdina\GameAladdinCPlusPlus\AladdiGameC\AladdiGameC\WinMain.cpp(15,33): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+  Generating Code...
+E:\Aladdina\GameAladdinCPlusPlus\AladdiGameC\AladdiGameC\WinMain.cpp(15,23): warning C4244: 'argument': conversion from 'const float' to 'int', possible loss of data
+E:\Aladdina\GameAladdinCPlusPlus\AladdiGameC\AladdiGameC\Game.cpp(74): warning C4715: 'Game::InitWindow': not all control paths return a value
   AladdiGameC.vcxproj -> E:\Aladdina\GameAladdinCPlusPlus\AladdiGameC\Debug\AladdiGameC.exe

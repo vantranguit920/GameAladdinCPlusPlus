@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Animations>
+  <Animation imagePath="boss.png" width="245" height="1179">
+    <sprite n="boss1_1.png" x="128" y="652" w="70" h="78" pX="-0.046875" pY="1"/>
+    <sprite n="boss1_2.png" x="139" y="575" w="63" h="77" pX="-0.0701754" pY="1"/>
+    <sprite n="boss1_3.png" x="0" y="499" w="61" h="76" pX="-0.0727273" pY="1"/>
+    <sprite n="boss1_4.png" x="0" y="423" w="56" h="75" pX="-0.0784314" pY="1"/>
+    <sprite n="boss1_5.png" x="0" y="575" w="70" h="76" pX="-0.078125" pY="1"/>
+    <sprite n="boss1_6.png" x="61" y="499" w="90" h="76" pX="-0.0487805" pY="1"/>
+    <sprite n="boss1_7.png" x="151" y="499" w="94" h="76" pX="-0.0588235" pY="1"/>
+    <sprite n="boss1_8.png" x="115" y="423" w="75" h="76" pX="-0.0735294" pY="1"/>
+    <sprite n="boss2_1.png" x="56" y="423" w="59" h="75" pX="-0.0925926" pY="1"/>
+    <sprite n="boss2_2.png" x="0" y="652" w="64" h="77" pX="-0.103448" pY="1"/>
+    <sprite n="boss2_3.png" x="64" y="652" w="64" h="77" pX="-0.103448" pY="1"/>
+    <sprite n="boss2_4.png" x="135" y="351" w="70" h="72" pX="-0.109375" pY="1"/>
+    <sprite n="boss2_5.png" x="0" y="284" w="67" h="64" pX="-0.0983607" pY="0.982759"/>
+    <sprite n="boss2_6.png" x="67" y="284" w="65" h="66" pX="-0.118644" pY="0.983333"/>
+    <sprite n="boss2_7.png" x="70" y="351" w="65" h="72" pX="-0.101695" pY="1"/>
+    <sprite n="fire1_1.png" x="109" y="113" w="26" h="52" pX="0.333333" pY="0.5"/>
+    <sprite n="fire1_2.png" x="70" y="220" w="24" h="58" pX="0.409091" pY="0.556604"/>
+    <sprite n="fire1_3.png" x="135" y="113" w="26" h="52" pX="0.375" pY="0.5"/>
+    <sprite n="fire1_4.png" x="170" y="165" w="30" h="55" pX="0.5" pY="0.52"/>
+    <sprite n="fire1_5.png" x="70" y="113" w="39" h="51" pX="0.557143" pY="0.478261"/>
+    <sprite n="fire1_6.png" x="15" y="0" w="31" h="15" pX="0.571429" pY="0.428571"/>
+    <sprite n="fire1_7.png" x="114" y="0" w="26" h="18" pX="0.666667" pY="0.5"/>
+    <sprite n="fire1_8.png" x="85" y="0" w="29" h="17" pX="0.615385" pY="0.5"/>
+    <sprite n="fire1_9.png" x="0" y="0" w="15" h="14" pX="0.714286" pY="0.346154"/>
+    <sprite n="fire1_10.png" x="46" y="0" w="39" h="15" pX="0.414286" pY="0.5"/>
+    <sprite n="fire1_11.png" x="184" y="0" w="17" h="23" pX="0.5" pY="0.785714"/>
+    <sprite n="fire2_1.png" x="87" y="165" w="83" h="55" pX="0" pY="1"/>
+    <sprite n="fire2_2.png" x="0" y="165" w="87" h="53" pX="0" pY="1"/>
+    <sprite n="fire2_3.png" x="99" y="67" w="109" h="46" pX="0" pY="1"/>
+    <sprite n="fire2_4.png" x="0" y="67" w="99" h="45" pX="0" pY="1"/>
+    <sprite n="fire2_5.png" x="80" y="23" w="85" h="34" pX="0" pY="1"/>
+    <sprite n="fire2_6.png" x="0" y="23" w="80" h="34" pX="0" pY="1"/>
+    <sprite n="fire2_7.png" x="0" y="113" w="70" h="47" pX="0" pY="1.02326"/>
+    <sprite n="fire2_8.png" x="0" y="220" w="70" h="56" pX="0" pY="1"/>
+    <sprite n="snake1_1.png" x="140" y="0" w="44" h="21" pX="0.2" pY="-1.07895"/>
+    <sprite n="snake1_2.png" x="165" y="23" w="47" h="44" pX="0.0813954" pY="0"/>
+    <sprite n="snake1_3.png" x="94" y="220" w="53" h="61" pX="0.333333" pY="0.281818"/>
+    <sprite n="snake1_4.png" x="70" y="575" w="69" h="77" pX="0.5" pY="0.428571"/>
+    <sprite n="snake1_5.png" x="152" y="730" w="72" h="80" pX="0.515385" pY="0.452055"/>
+    <sprite n="snake1_6.png" x="0" y="810" w="73" h="87" pX="0.530303" pY="0.5"/>
+    <sprite n="snake1_7.png" x="0" y="900" w="75" h="90" pX="0.529412" pY="0.512195"/>
+    <sprite n="snake1_8.png" x="146" y="991" w="78" h="92" pX="0.528169" pY="0.52381"/>
+    <sprite n="snake1_9.png" x="80" y="1083" w="80" h="95" pX="0.541096" pY="0.534884"/>
+    <sprite n="snake1_10.png" x="160" y="1083" w="83" h="96" pX="0.553333" pY="0.545977"/>
+    <sprite n="snake1_11.png" x="0" y="1083" w="80" h="95" pX="0.541096" pY="0.534884"/>
+    <sprite n="snake2_1.png" x="147" y="220" w="77" h="64" pX="0.0428571" pY="0.310345"/>
+    <sprite n="snake2_2.png" x="0" y="351" w="70" h="70" pX="0.265625" pY="0.375"/>
+    <sprite n="snake2_3.png" x="0" y="730" w="74" h="79" pX="0.440299" pY="0.444444"/>
+    <sprite n="snake2_4.png" x="74" y="730" w="78" h="79" pX="0.5" pY="0.444444"/>
+    <sprite n="snake2_5.png" x="70" y="991" w="76" h="92" pX="0.507246" pY="0.52381"/>
+    <sprite n="snake2_6.png" x="145" y="900" w="76" h="91" pX="0.5" pY="0.518072"/>
+    <sprite n="snake2_7.png" x="73" y="810" w="77" h="90" pX="0.5" pY="0.512195"/>
+    <sprite n="snake2_8.png" x="150" y="810" w="77" h="90" pX="0.5" pY="0.512195"/>
+    <sprite n="snake2_9.png" x="0" y="991" w="70" h="92" pX="0.46875" pY="0.52381"/>
+    <sprite n="snake2_10.png" x="75" y="900" w="70" h="90" pX="0.203125" pY="0.512195"/>
+    <sprite n="snake2_11.png" x="132" y="284" w="78" h="67" pX="0.0352113" pY="0.352459"/>
+</Animation>
+</Animations>

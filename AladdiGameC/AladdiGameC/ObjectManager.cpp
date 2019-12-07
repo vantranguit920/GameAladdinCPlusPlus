@@ -9,10 +9,6 @@ ObjectManager::~ObjectManager()
 
 	delete map;
 	delete viewport;
-
-
-
-
 }
 
 //Load Game
@@ -62,6 +58,14 @@ void ObjectManager::Init(Graphic* graphic)
 	spriteApple = new Sprite(graphic, "./Resource Files/apple.png", D3DCOLOR_XRGB(163, 73, 164));
 	infoApple = new SpriteSheet("./Resource Files/apple.xml");
 
+	//
+	spriteBoss = new Sprite(graphic, "./Resource Files/boss.png", D3DCOLOR_XRGB(163, 73, 164));
+	infoBoss = new SpriteSheet("./Resource Files/boss.xml");
+
+	//
+	spriteFire = new Sprite(graphic, "./Resource Files/boss.png", D3DCOLOR_XRGB(163, 73, 164));
+	infoFire = new SpriteSheet("./Resource Files/boss.xml");
+
 	pendu = new pendulum(spritePendu, infoPendu, D3DXVECTOR2(400, 300));
 	//
 	
@@ -84,8 +88,11 @@ void ObjectManager::Init(Graphic* graphic)
 	shop = new Shop(spriteShop, infoShop, D3DXVECTOR2(400, 300), aladin);
 	apple = new Apple(spriteApple, infoApple, D3DXVECTOR2(266, 282), aladin);
 
+	boss = new Boss(spriteBoss, infoBoss, D3DXVECTOR2(300, 282), aladin);
+	fire = new Fire(spriteFire, infoFire, D3DXVECTOR2(500, 282), aladin);
 	bat = new Bat(spriteBat, infoBat, D3DXVECTOR2(200, 621), aladin);
 	viewport = new Viewport(0, 1152);
+
 	map = new Map(graphic, MapXML, TileSetPNG);
 	map->WriteGrid(map->grid);
 	map2 = new Map(graphic, MapXML2, TileSetPNG);
@@ -124,8 +131,6 @@ void ObjectManager::Update(float dt, Keyboard* keyboard)
 		aladin->OnCollision(listWall.at(i), disMan, disMan);
 
 		//Kiểm tra cổng
-		
-
 		listWall.at(i)->Update(dt, keyboard);
 	}
 	
@@ -145,7 +150,9 @@ void ObjectManager::Update(float dt, Keyboard* keyboard)
 	rodGuard->Update(dt, keyboard);
 	skeleton->Update(dt, keyboard);
 	spendThese->Update(dt, keyboard);
+	fire->Update(dt, keyboard);
 	savePosition->Update(dt, keyboard);
+	boss->Update(dt, keyboard);
 	bonusLevel->Update(dt, keyboard);
 	shop->Update(dt, keyboard);
 	apple->Update(dt, keyboard);
@@ -177,11 +184,12 @@ void ObjectManager::Render()
 	skeleton->Render(viewport);
 	rodGuard->Render(viewport);
 	spendThese->Render(viewport);
+	boss->Render(viewport);
 	savePosition->Render(viewport);
 	bonusLevel->Render(viewport);
 	shop->Render(viewport);
 	apple->Render(viewport);
-
+	fire->Render(viewport);
 	aladin->Render(viewport);
 	bat->Render(viewport);
 	map2->Render(viewport);

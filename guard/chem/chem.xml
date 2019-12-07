@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker https://www.codeandweb.com/texturepacker -->
+<!-- $TexturePacker:SmartUpdate:060f12a0814847645232c2f1fbf34020:c052095cbba66db2c8e8585856655d66:7d1af89c12c78f7308b98fa54dfe44d5$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="chem.png" width="126" height="195">
+    <sprite n="chem1_01.png" x="1" y="134" w="43" h="60" pX="1" pY="1"/>
+    <sprite n="chem1_02.png" x="82" y="59" w="43" h="73" pX="1" pY="1"/>
+    <sprite n="chem1_03.png" x="46" y="134" w="66" h="52" pX="1" pY="1" r="y"/>
+    <sprite n="chem1_04.png" x="1" y="1" w="114" h="56" pX="1" pY="1"/>
+    <sprite n="chem1_05.png" x="1" y="59" w="79" h="73" pX="1" pY="1"/>
+</TextureAtlas>

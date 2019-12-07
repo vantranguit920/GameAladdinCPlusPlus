@@ -21,7 +21,8 @@
 #include "BonusLevel.h"
 #include "Shop.h"
 #include "Apple.h"
-
+#include "Boss.h"
+#include "Fire.h"
 class ObjectManager
 {
 protected:
@@ -99,6 +100,15 @@ protected:
 	Bat *bat;
 	Sprite *spriteBat;
 	SpriteSheet *infoBat;
+
+	Boss* boss;
+	Sprite* spriteBoss;
+	SpriteSheet* infoBoss;
+
+	Fire* fire;
+	Sprite* spriteFire;
+	SpriteSheet* infoFire;
+
 	std::unordered_set<Object*> objects;
 
 public:

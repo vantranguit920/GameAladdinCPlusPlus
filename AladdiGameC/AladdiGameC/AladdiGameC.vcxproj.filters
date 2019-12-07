@@ -130,6 +130,12 @@
     <ClCompile Include="Apple.cpp">
       <Filter>Map</Filter>
     </ClCompile>
+    <ClCompile Include="Boss.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Fire.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h">
@@ -256,6 +262,12 @@
       <Filter>Map</Filter>
     </ClInclude>
     <ClInclude Include="Apple.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Fire.h">
       <Filter>Map</Filter>
     </ClInclude>
   </ItemGroup>
