@@ -52,7 +52,7 @@ pendulum::pendulum(Sprite * sprite, SpriteSheet * info, D3DXVECTOR2 pos)
 	transform = D3DXVECTOR2(0, 0);
 	this->allowDraw = true;
 	flipFlag = false;
-	SetBound(20, 80);
+	SetBound(20, 100);
 	this->position = pos;
 
 }

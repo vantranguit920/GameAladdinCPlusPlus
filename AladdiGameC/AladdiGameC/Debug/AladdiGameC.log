@@ -1,8 +1,7 @@
-﻿  RodGuard.cpp
+﻿  pendulum.cpp
   c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  Shop.cpp
-  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  Skeleton.cpp
-  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  Generating Code...
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\pendulum.cpp(42): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\pendulum.cpp(43): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\pendulum.cpp(44): warning C4244: '=': conversion from 'FLOAT' to 'LONG', possible loss of data
+c:\users\haiapple.com\desktop\aladdingamec\aladdigamec\aladdigamec\pendulum.cpp(45): warning C4244: '=': conversion from 'float' to 'LONG', possible loss of data
   AladdiGameC.vcxproj -> C:\Users\HaiApple.Com\Desktop\AladdinGameC\AladdiGameC\Debug\AladdiGameC.exe
