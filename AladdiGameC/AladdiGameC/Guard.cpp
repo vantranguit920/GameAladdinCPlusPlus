@@ -9,7 +9,7 @@ Guard::Guard(Sprite* spGuard, SpriteSheet* info, D3DXVECTOR2 pos, Aladdin* aladd
 	transform = D3DXVECTOR2(0, 0);
 	position = pos;
 	
-	SetBound(10, 10);
+	SetBound(50, 100);
 	allowDraw = true;
 	flipFlag = false;
 	this->state = GuardState::Common;
@@ -36,23 +36,48 @@ void Guard::ChangeAnimation(Keyboard* key){
 
 void Guard::Update(float dt, Keyboard* key){
 
-	D3DXVECTOR2 posAla = aladdin->GetPosition();
-	if (abs(aladdin->GetPosition().x - position.x) < 150 && abs(aladdin->GetPosition().x - position.x) > 50) {
-		this->state = GuardState::GuillotineKnife;
+
+	
+	if (aladdin->GetPosition().x - position.x < 0) {
+		this->flipFlag = false;
 
 	}
 	else {
-		this->state = GuardState::Common;
+		this->flipFlag = true;
 	}
+		
+	if (isDie) {
+		this->state = GuardState::HitByBullets;
+		//isDie = false;
+		timeout += dt;
+	}
+	else
+	{
+		D3DXVECTOR2 posAla = aladdin->GetPosition();
+		if (abs(aladdin->GetPosition().x - position.x) < 150 && abs(aladdin->GetPosition().x - position.x) > 50) {
+			this->state = GuardState::GuillotineKnife;
 
-	
-	
-	timeout += dt;
+		}
+		else {
+			this->state = GuardState::Common;
+		}
+	}
+	if(timeout>1.0f&&isDie){
+		this->state = GuardState::Died;
+	}
 	ChangeAnimation(key);
 	Object::Update(dt, key);
 	GuardAnim->Update(dt, key);
 }
-void Guard::OnCollision(Object* obj, D3DXVECTOR2 distance, D3DXVECTOR2 disGuard){
+void Guard::OnCollision(Object* obj, D3DXVECTOR2 distance){
+	if (obj->GetTag() == Object::Tag::Player) {
+		Aladdin *ala = (Aladdin*)obj;
+		if (ala->getState()->GetState() == AladinState::Attack) {
+			if (Collision::isCollision(ala->GetBound2(), this->GetBound())) {
+				isDie = true;
+			}
+		}
+	}
 }
 void Guard::Render(Viewport* viewport){
 	if (viewport->isContains(this->GetBound())) {
@@ -65,8 +90,14 @@ void Guard::Render(Viewport* viewport){
 			GuardAnim->GetScale(),
 			GuardAnim->GetTransform(),
 			GuardAnim->GetAngle());
-
-		this->sprite->SetScale(D3DXVECTOR2(1.5, 1.5));
+		if (this->GetFlipFlag()) {
+			this->sprite->SetScale(D3DXVECTOR2(-1.2f, 1.2f));
+		}
+		else
+		{
+			this->sprite->SetScale(D3DXVECTOR2(1.2f, 1.2f));
+		}
+		
 		this->sprite->Render(viewport);
 	}
 	else {

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Animations>
+<Animation imagePath="skeleton.png" width="243" height="509">
+    <sprite n="1.png" x="1" y="25" w="86" h="26" pX="1" pY="1"/>
+    <sprite n="2.png" x="156" y="25" w="80" h="29" pX="1" pY="1"/>
+    <sprite n="3.png" x="1" y="96" w="75" h="45" pX="1" pY="1"/>
+    <sprite n="4.png" x="78" y="96" w="62" h="60" pX="1" pY="1"/>
+    <sprite n="5.png" x="142" y="96" w="50" h="67" pX="1" pY="1"/>
+    <sprite n="6.png" x="194" y="96" w="48" h="71" pX="1" pY="1"/>
+    <sprite n="7.png" x="67" y="169" w="48" h="75" pX="1" pY="1"/>
+    <sprite n="8.png" x="52" y="331" w="51" h="81" pX="0.921569" pY="1"/>
+    <sprite n="9.png" x="117" y="248" w="51" h="81" pX="0.921569" pY="1"/>
+    <sprite n="10.png" x="63" y="248" w="52" h="81" pX="0.884615" pY="1"/>
+    <sprite n="11.png" x="170" y="248" w="68" h="81" pX="0.926471" pY="1"/>
+    <sprite n="12.png" x="77" y="417" w="65" h="89" pX="0.923077" pY="1"/>
+    <sprite n="13.png" x="105" y="331" w="50" h="82" pX="0.9" pY="1"/>
+    <sprite n="14.png" x="1" y="331" w="49" h="81" pX="0.918367" pY="1"/>
+    <sprite n="15.png" x="157" y="331" w="61" h="84" pX="1.09836" pY="1"/>
+    <sprite n="16.png" x="1" y="169" w="64" h="75" pX="1.09375" pY="1"/>
+    <sprite n="17.png" x="1" y="417" w="74" h="85" pX="1.05405" pY="1"/>
+    <sprite n="18.png" x="144" y="417" w="81" h="91" pX="0.962963" pY="1"/>
+    <sprite n="19.png" x="117" y="169" w="95" h="77" pX="0.821053" pY="1"/>
+    <sprite n="20.png" x="1" y="248" w="60" h="79" pX="1.13333" pY="1"/>
+    <sprite n="21.png" x="7" y="1" w="16" h="5" pX="1" pY="1"/>
+    <sprite n="22.png" x="93" y="1" w="6" h="15" pX="1" pY="1"/>
+    <sprite n="23.png" x="57" y="1" w="12" h="13" pX="1" pY="1"/>
+    <sprite n="24.png" x="35" y="1" w="6" h="8" pX="1" pY="1"/>
+    <sprite n="died_1.png" x="71" y="1" w="20" h="15" pX="0.5" pY="1"/>
+    <sprite n="died_2.png" x="123" y="1" w="23" h="20" pX="0.5" pY="1"/>
+    <sprite n="died_3.png" x="89" y="25" w="31" h="28" pX="0.5" pY="1"/>
+    <sprite n="died_4.png" x="1" y="56" w="38" h="32" pX="0.5" pY="1"/>
+    <sprite n="died_5.png" x="41" y="56" w="40" h="36" pX="0.5" pY="1"/>
+    <sprite n="died_6.png" x="169" y="56" w="42" h="38" pX="0.5" pY="1"/>
+    <sprite n="died_7.png" x="125" y="56" w="42" h="37" pX="0.5" pY="1"/>
+    <sprite n="died_8.png" x="83" y="56" w="40" h="36" pX="0.5" pY="1"/>
+    <sprite n="died_9.png" x="122" y="25" w="32" h="28" pX="0.5" pY="1"/>
+    <sprite n="died_10.png" x="148" y="1" w="24" h="22" pX="0.5" pY="1"/>
+    <sprite n="died_11.png" x="101" y="1" w="20" h="15" pX="0.5" pY="1"/>
+    <sprite n="died_12.png" x="43" y="1" w="12" h="12" pX="0.5" pY="1"/>
+    <sprite n="died_13.png" x="25" y="1" w="8" h="7" pX="0.5" pY="1"/>
+    <sprite n="died_14.png" x="1" y="1" w="4" h="3" pX="0.5" pY="1"/>
+</Animation>
+</Animations>

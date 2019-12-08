@@ -15,43 +15,24 @@ Map::Map(Graphic* graphic, const char* pathMapxml, const char* pathMap)
 	ReadXML(graphic, pathMapxml);
 	position = D3DXVECTOR2(0, 0);
 	
-	RECT r;
-	r.left = 0;
-	r.right = r.left + width*tileWidth;
-	r.bottom = 0;
-	r.top = r.bottom + height*tileHeight;
+	//RECT r;
+	//r.left = 0;
+	//r.right = r.left + width*tileWidth;
+	//r.bottom = 0;
+	//r.top = r.bottom + height*tileHeight;
 
-	if (r.right < r.top)
-		r.right = r.top;
-	else
-		r.top = r.right;
-	grid = new Grid();
-	for (int i = 0; i < numObjectGroups; i++)
-	{
-		for (int j = 0; j < objectGroups.at(i)->numObjects; j++)
-		{
-			Object *obj = new Object();
-			float x = objectGroups.at(i)->objects.at(j)->x;
-			float y = objectGroups.at(i)->objects.at(j)->y;
-			float w = objectGroups.at(i)->objects.at(j)->width;
-			float h = objectGroups.at(i)->objects.at(j)->height;
-			int alow = objectGroups.at(i)->objects.at(j)->alow;
-			D3DXVECTOR2 pos;
-			pos.x = x + w / 2;
-			pos.y = height * tileHeight - y - h / 2;
-			obj->SetPosition(pos);
-			obj->SetBound(w, h);
-			obj->id = objectGroups.at(i)->objects.at(j)->id;
-			obj->SetName(objectGroups.at(i)->objects.at(j)->name);
-			obj->SetAllowDraw(alow);
-			grid->AddObject(obj);
-		}
-	}
+	//if (r.right < r.top)
+	//	r.right = r.top;
+	//else
+	//	r.top = r.right;
+	
 	//save file Grid
 	//WriteGrid(grid);
 
 
 }
+
+
 
 Map::~Map()
 {
@@ -196,6 +177,34 @@ void Map::Render(Viewport * viewport)
 	
 }
 
+void Map::InitGrid()
+{
+	grid = new Grid();
+	for (int i = 0; i < numObjectGroups; i++)
+	{
+		int a=0;
+		for (int j = 0; j < objectGroups.at(i)->numObjects; j++)
+		{
+			Object *obj = new Object();
+			float x = objectGroups.at(i)->objects.at(j)->x;
+			float y = objectGroups.at(i)->objects.at(j)->y;
+			float w = objectGroups.at(i)->objects.at(j)->width;
+			float h = objectGroups.at(i)->objects.at(j)->height;
+			
+			D3DXVECTOR2 pos;			
+			pos.x = x + w / 2;
+			pos.y = height * tileHeight - y - h / 2;
+			obj->SetPosition(pos);
+			obj->SetBound(w, h);
+			obj->id = objectGroups.at(i)->objects.at(j)->id;
+			obj->SetName(objectGroups.at(i)->objects.at(j)->name);
+			
+			grid->AddObject(obj);
+		}
+		
+	}
+}
+
 void Map::WriteGrid(Grid * grid)
 {
 	TiXmlDocument doc;
@@ -227,7 +236,7 @@ void Map::WriteCell(TiXmlElement * root, Grid * grid)
 				obj->SetAttribute("w", o->GetWidth());
 				obj->SetAttribute("h",o->GetHeight());
 				obj->SetAttribute("id", o->id);
-				obj->SetAttribute("alow", o->GetAllowDraw());
+				
 				Cel->LinkEndChild(obj);
 				cout++;
 			}

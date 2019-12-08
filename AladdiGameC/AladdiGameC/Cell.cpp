@@ -15,7 +15,7 @@ Cell::Cell(int x, int y)
 
 void Cell::Add(Object * obj)
 {
-	if (obj != NULL && IsContain(obj->GetBound()))
+	if (obj != NULL )
 	{
 		objects.insert(obj);
 	}

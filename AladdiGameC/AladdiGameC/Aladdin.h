@@ -3,6 +3,9 @@
 #include "AladdinAnimation.h"
 #include "AladinState.h"
 #include "Viewport.h"
+#include "Brick.h"
+#include "pendulum.h"
+#include "Arrow.h"
 class Aladdin:public Object
 {
 protected:

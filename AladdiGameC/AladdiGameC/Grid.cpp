@@ -19,8 +19,8 @@ Grid * Grid::GetInstance()
 
 Grid::Grid()
 {
-	numCols = 2240 / CELL_WIDTH;
-	numRows = 1120 / CELL_HEIGHT;
+	numCols = 2240 / CELL_WIDTH+1;
+	numRows = 1120 / CELL_HEIGHT+1;
 	std::vector<RECT> grounds;
 
 	cells = new Cell**[numRows];
@@ -81,7 +81,12 @@ void Grid::AddObject(Object * object)
 	int startY = floor(objBound.top / CELL_HEIGHT);
 	int endY = floor(objBound.bottom / CELL_HEIGHT);
 
-	for (int i = startY; i <= endY; i++)
+	if (object->id == 9) {
+		int a = 2 + 3;
+	}
+
+
+	for (int i = endY; i <= startY; i++)
 	{
 		if (i < 0 || i >= numRows || cells[i] == nullptr)
 			continue;
@@ -93,7 +98,54 @@ void Grid::AddObject(Object * object)
 		}
 	}
 }
+void Grid::getObjectCollision(std::vector<Object*> &listObj, std::vector<Object*> &listWall, std::vector<Object*> &listGround, D3DXVECTOR2 pos) {
+	int startX, startY, endX, endY;
+	startX = pos.x / CELL_WIDTH;
+	endX = (pos.x + 500) / CELL_WIDTH;
+	endY = pos.y / CELL_HEIGHT;
+	startY = (pos.y - 500) / CELL_HEIGHT;
+	
+	for (int i = startY; i <= endY; i++)
+	{
+		if (i < 0 || i >= numRows || cells[i] == nullptr)
+			continue;
+		for (int j = startX; j <= endX; j++)
+		{
+			if (j < 0 || j >= numCols || cells[i][j] == nullptr)
+				continue;
+			for (auto o : cells[i][j]->objects) {
+				bool isExit = false;
+				for (auto child : listWall) {
+					if (child->id == o->id) {
+						isExit = true;
+						break;
+					}
+				}
+				for (auto child : listObj) {
+					if (child->id == o->id) {
+						isExit = true;
+						break;
+					}
+				}
+				if (!isExit) {
+					if (o->GetTag() == Object::Tag::Wall) {
+						listWall.push_back(o);
+					}
+					else if(o->GetTag() == Object::Tag::Ground)
+					{
+						listGround.push_back(o);
+					}
+					else
+					{
+						listObj.push_back(o);
+					}
+				}
+				
+			}
+		}
+	}
 
+}
 void Grid::RemoveObject(Object * object)
 {
 	if (object == NULL)

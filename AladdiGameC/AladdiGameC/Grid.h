@@ -38,7 +38,7 @@ public:
 	//Update entire grid
 	void UpdateGrid(float deltaTime);
 
-
+	void getObjectCollision(std::vector<Object*> &listObj, std::vector<Object*> &listWall, std::vector<Object*> &listGround, D3DXVECTOR2 pos);
 	//Get objects that have ability to collide with a target Game object
 	//std::unordered_set<MapObject*> GetColliableObjectsWith(MapObject* target, float deltaTime);
 	//Get object Ground in visual viewport

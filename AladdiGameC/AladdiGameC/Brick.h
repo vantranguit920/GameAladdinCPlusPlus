@@ -24,6 +24,7 @@ public:
 	void setallowdraw(bool allow);
 	void setstate(BrickState state);
 	bool getallowdraw();
+	int getIndexAnim();
 	Brick();
 	Brick(Sprite *sprite,SpriteSheet *info, D3DXVECTOR2 pos);
 	~Brick();

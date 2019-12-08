@@ -21,6 +21,8 @@ public:
 	void Update(float dt, Keyboard* key);
 	void Render(Viewport* viewport);
 	void setstate(ArrowState state);
+	int getIndexAnim();
+	RECT GetBound();
 	Arrow();
 	Arrow(Sprite *sprite, SpriteSheet *info, D3DXVECTOR2 pos);
 	~Arrow();

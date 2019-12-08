@@ -38,7 +38,7 @@ public:
 	void Update(float dt);
 	void Render(Viewport * viewport);
 	
-
+	void InitGrid();
 	void WriteGrid(Grid *grid);
 	void WriteCell(TiXmlElement *root, Grid *grid);
 };

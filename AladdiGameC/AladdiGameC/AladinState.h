@@ -11,7 +11,9 @@ protected:
 	Sound *sound;
 	GSound *attacksound;
 	float delayattacktime = 0;
-	int startJum;
+	float timebleed = 0;
+	int startJum,side;
+	bool isbleed=false;
 public:
 
 	enum State
@@ -22,6 +24,7 @@ public:
 		runattack,
 		jum,
 		fall,
+		bleed,
 	};
 	State state;
 	AladinState(Object *aladdin);
@@ -35,8 +38,8 @@ public:
 	void RunState(Keyboard *key);
 	void jumState(Keyboard *key);
 	void fallState(Keyboard* key);
-
-
+	bool isbleeds();
+	void BleedState(int side);
 	State GetState(); 
 	void SetState(State State);
 

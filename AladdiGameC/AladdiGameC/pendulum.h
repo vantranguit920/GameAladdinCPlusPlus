@@ -15,6 +15,8 @@ public:
 	void Render(Viewport* viewport);
 	pendulum();
 	pendulum(Sprite *sprite, SpriteSheet *info, D3DXVECTOR2 pos);
+	int getIndexAnim();
+	RECT GetBound();
 	~pendulum();
 };
 

@@ -30,6 +30,9 @@ void Brick::ChangeAnim(Keyboard* key) {
 	}
 	
 }
+int Brick::getIndexAnim() {
+	return Brickanim->GetIndex();
+}
 void Brick::Update(float dt, Keyboard* key) {
 	
 	if (timecout >= 3.0f) {
@@ -59,6 +62,7 @@ void Brick::setstate(BrickState state) {
 }
 
 void Brick::Render(Viewport* viewport) {
+
 	if (viewport->isContains(this->GetBound())) {
 		this->allowDraw = true;
 		
@@ -68,7 +72,7 @@ void Brick::Render(Viewport* viewport) {
 			Brickanim->GetScale(),
 			Brickanim->GetTransform(),
 			Brickanim->GetAngle());
-		this->sprite->SetScale(D3DXVECTOR2(1.5, 1.5));
+		this->sprite->SetScale(D3DXVECTOR2(1.0f, 1.0f));
 		this->sprite->Render(viewport);
 	}
 	else {

@@ -15,7 +15,7 @@ Aladdin::Aladdin(Sprite *spAla, SpriteSheet *ifoAla)
 	sprite = spAla;
 	animAla = new AladdinAnimation(ifoAla);
 	stateAla = new AladinState(this);
-	position = D3DXVECTOR2(350, 550);
+	position = D3DXVECTOR2(50, 1150);
 	SetBound(20, 34);
 	velocity = D3DXVECTOR2(0, -2);
 	
@@ -36,7 +36,7 @@ void Aladdin::ChangeAnimation(float dt, Keyboard* key) {
 		animAla->standAnimation();
 		break;
 	case AladinState::Attack:
-
+		
 		stateAla->AttackState(key);
 		animAla->attackAnimation();
 
@@ -62,7 +62,15 @@ void Aladdin::ChangeAnimation(float dt, Keyboard* key) {
 		stateAla->fallState(key);
 		animAla->fallAnimation();
 		break;
+	
 	}
+	if (stateAla->isbleeds()) {
+		animAla->damageAnimation();
+	}
+	if(stateAla->getAttack())
+		this->SetBound(150, 30);
+	else
+		this->SetBound(20, 30);
 	stateAla->Update(dt, key);
 
 
@@ -89,10 +97,12 @@ void Aladdin::OnCollision(Object *obj, D3DXVECTOR2 distance, D3DXVECTOR2 disAla)
 			{
 				if (sideCollision.x != 0.0f)
 				{
-					/*position.x += disAla.x * time;
-					velocity.x = 0;*/
-
-
+					if (obj->GetTag() == Object::Tag::Wall) {
+						position.x += disAla.x * time;
+						velocity.x = 0;
+					}
+					
+				
 				}
 				else if (sideCollision.y == -1.0f)	//va chạm trên
 				{
@@ -100,13 +110,88 @@ void Aladdin::OnCollision(Object *obj, D3DXVECTOR2 distance, D3DXVECTOR2 disAla)
 				}
 				else if (sideCollision.y == 1.0f)	//va chạm dưới
 				{
-					position.y += disAla.y * time;
-					velocity.y = 0;
+					if (obj->GetName() == "Brick"|| obj->GetTag() == Object::Tag::Ground|| obj->GetTag() == Object::Tag::Wall) {
+						if (obj->GetName() == "Brick") {
+							Brick *b = (Brick*)obj;
+							if (b->getIndexAnim() < 8) {
+								position.y += disAla.y * time;
+								velocity.y = 0;
+							}
+						}
+						else
+						{
+							position.y += disAla.y * time;
+							velocity.y = 0;
+						}
+					}
+					
+					
 
 
 				}
+
+				if (obj->GetTag(obj->GetName()) == Object::Tag::Enemys) {
+					int side;
+					if (this->position.x < obj->GetPosition().x) {
+						side = 1;
+					}
+					else
+					{
+						side = -1;
+					}
+					if (obj->GetName() == "Pendu") {
+						pendulum *pendu = (pendulum*)obj;
+						if (pendu->getIndexAnim()>5&& pendu->getIndexAnim() < 20) {
+							position.x += disAla.x * time;
+							velocity.x = 0;
+							this->stateAla->BleedState(side);
+						}
+					}else if(obj->GetName() == "Arow") {
+						Arrow *arow = (Arrow*)obj;
+						if (arow->getIndexAnim() > 3 && arow->getIndexAnim() < 8) {
+							position.x += disAla.x * time;
+							velocity.x = 0;
+							this->stateAla->BleedState(side);
+						}
+					}else  if (obj->GetName() == "Guard") {
+						int a = 1 + 2;
+					}
+					
+				}
 			}
 			
+		}
+		else {
+			if (obj->GetTag(obj->GetName()) == Object::Tag::Enemys) {
+				int side;
+				if (this->position.x < obj->GetPosition().x) {
+					side = 1;
+				}
+				else
+				{
+					side = -1;
+				}
+				if (obj->GetName() == "Pendu") {
+					pendulum *pendu = (pendulum*)obj;
+					if (pendu->getIndexAnim() > 5 && pendu->getIndexAnim() < 20) {
+						
+						velocity.x = 0;
+						this->stateAla->BleedState(side);
+					}
+				}
+				else if (obj->GetName() == "Arow") {
+					Arrow *arow = (Arrow*)obj;
+					if (arow->getIndexAnim() > 3 && arow->getIndexAnim() < 8) {
+						
+						velocity.x = 0;
+						this->stateAla->BleedState(side);
+					}
+				}
+				else  if (obj->GetName() == "Guard") {
+					int a = 1 + 2;
+				}
+
+			}
 		}
 		
 	}

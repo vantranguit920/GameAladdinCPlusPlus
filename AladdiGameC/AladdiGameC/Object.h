@@ -18,6 +18,7 @@ protected:
 	float angle;					//Góc quay
 	bool flipFlag;					//Cờ lật
 	bool allowDraw;					//cho phép vẽ
+	
 	string name;					//Tên
 	int HP = 0, damage = 0;
 	int HPMax;
@@ -29,6 +30,7 @@ public:
 		Player,
 		Bullets,
 		Wall,
+		Ground,
 		Enemys,
 		Items,
 		Port,
@@ -118,5 +120,7 @@ public:
 	//Damage
 	virtual int GetDamage();
 	virtual void SetDamage(int damage);
+	//status
+	
 };
 

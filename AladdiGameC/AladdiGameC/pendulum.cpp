@@ -25,7 +25,7 @@ void pendulum::Render(Viewport * viewport)
 			penduAnim->GetScale(),
 			penduAnim->GetTransform(),
 			penduAnim->GetAngle());
-		this->sprite->SetScale(D3DXVECTOR2(1.5, 1.5));
+		this->sprite->SetScale(D3DXVECTOR2(1.0f, 1.0f));
 		this->sprite->Render(viewport);
 	}
 	else {
@@ -37,7 +37,14 @@ void pendulum::Render(Viewport * viewport)
 pendulum::pendulum()
 {
 }
-
+RECT pendulum::GetBound()
+{
+	bound.left = position.x+10;
+	bound.right = bound.left + width;
+	bound.top = position.y;
+	bound.bottom = bound.top - height;
+	return bound;
+}
 pendulum::pendulum(Sprite * sprite, SpriteSheet * info, D3DXVECTOR2 pos)
 {
 	this->sprite = sprite;
@@ -45,8 +52,14 @@ pendulum::pendulum(Sprite * sprite, SpriteSheet * info, D3DXVECTOR2 pos)
 	transform = D3DXVECTOR2(0, 0);
 	this->allowDraw = true;
 	flipFlag = false;
+	SetBound(20, 80);
 	this->position = pos;
 
+}
+
+int pendulum::getIndexAnim()
+{
+	return penduAnim->GetIndex();
 }
 
 

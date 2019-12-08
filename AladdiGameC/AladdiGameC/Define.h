@@ -26,10 +26,10 @@ namespace Define
 	const float KickSpeed = 1.0f;
 	const float BulletSpeed = 4.0f;
 	const float Gravity = 1.0f;
-	const float FallAcceleration = 0.5f;
+	const float FallAcceleration = 0.15f;
 
 	//Distance
-	const float JumpMax = 150.0f;
+	const float JumpMax = 100.0f;
 	const float JumpMin = 50.0f;
 	const float GlideMax = 100.0f;
 	const float GlideMin = 30.f;

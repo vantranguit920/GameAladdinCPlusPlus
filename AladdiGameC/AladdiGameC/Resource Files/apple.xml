@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Animations>
+<Animation imagePath="apple.png" width="55" height="11">
+    <sprite n="apple - Copy (2).png" x="0" y="0" w="11" h="11" pX="0.5" pY="0.5"/>
+    <sprite n="apple - Copy (3).png" x="11" y="0" w="11" h="11" pX="0.5" pY="0.5"/>
+    <sprite n="apple - Copy.png" x="22" y="0" w="11" h="11" pX="0.5" pY="0.5"/>
+    <sprite n="apple.png" x="33" y="0" w="11" h="11" pX="0.5" pY="0.5"/>
+    <sprite n="font01_a.png" x="44" y="0" w="11" h="11" pX="0.5" pY="0.5"/>
+</Animation>
+</Animations>

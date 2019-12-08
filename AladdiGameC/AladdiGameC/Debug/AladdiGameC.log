@@ -1,3 +1,8 @@
-﻿  Guard.cpp
+﻿  RodGuard.cpp
   c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  Shop.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  Skeleton.cpp
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  Generating Code...
   AladdiGameC.vcxproj -> C:\Users\HaiApple.Com\Desktop\AladdinGameC\AladdiGameC\Debug\AladdiGameC.exe

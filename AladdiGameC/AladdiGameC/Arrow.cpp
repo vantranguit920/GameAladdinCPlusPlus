@@ -46,7 +46,7 @@ void Arrow::Render(Viewport* viewport)
 			arrowAnim->GetScale(),
 			arrowAnim->GetTransform(),
 			arrowAnim->GetAngle());
-		this->sprite->SetScale(D3DXVECTOR2(1.5, 1.5));
+		this->sprite->SetScale(D3DXVECTOR2(1.0f, 1.0f));
 		this->sprite->Render(viewport);
 	}
 	else {
@@ -60,6 +60,20 @@ void Arrow::setstate(ArrowState state)
 	this->state = state;
 }
 
+int Arrow::getIndexAnim()
+{
+	return arrowAnim->GetIndex();
+}
+
+RECT Arrow::GetBound()
+{
+	bound.left = position.x+10;
+	bound.right = bound.left + width;
+	bound.top = position.y;
+	bound.bottom = bound.top - height;
+	return bound;
+}
+
 Arrow::Arrow()
 {
 }
@@ -71,6 +85,7 @@ Arrow::Arrow(Sprite* sprite, SpriteSheet* info, D3DXVECTOR2 pos)
 	transform = D3DXVECTOR2(0, 0);
 	this->allowDraw = true;
 	flipFlag = false;
+	SetBound(20, 30);
 	this->position = pos;
 	this->state = ArrowState::oppen;
 

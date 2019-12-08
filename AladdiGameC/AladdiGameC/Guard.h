@@ -6,6 +6,7 @@
 #include "Aladdin.h"
 #include "SpriteSheet.h"
 #include "Keyboard.h"
+#include "Collision.h"
 
 class Guard :public Object
 {
@@ -13,7 +14,7 @@ protected:
 	Animation* GuardAnim;
 	Aladdin* aladdin;
 	Viewport* viewport;
-
+	bool isDie = false;
 	float timeout = 0.0f;
 public:
 	Guard();
@@ -30,7 +31,7 @@ public:
 	GuardState state;
 	void ChangeAnimation(Keyboard* key);
 
-	void OnCollision(Object* obj, D3DXVECTOR2 distance, D3DXVECTOR2 disGuard);
+	void OnCollision(Object* obj, D3DXVECTOR2 distance);
 
 	void Update(float dt, Keyboard* key);
 	void Render(Viewport* viewport);

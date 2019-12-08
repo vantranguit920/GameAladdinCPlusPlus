@@ -16,6 +16,11 @@ AladinState::AladinState(Object *Aladdin)
 	this->attacksound = this->sound->LoadSound("./Sound/Low_Sword.wav");
 
 }
+void AladinState::BleedState(int sides)
+{
+	this->side = sides;
+	isbleed = true;
+}
 AladinState::State AladinState::GetState() {
 	return state;
 
@@ -107,19 +112,24 @@ void AladinState::jumState(Keyboard* key) {
 }
 void AladinState::fallState(Keyboard* key) {
 
-	/*if (Aladdin->GetVelocity().y == 0) {
+	if (Aladdin->GetVelocity().y == 0) {
 		this->state = State::Standing;
 	}
 	else {
 		Aladdin->SetVelocityY(Aladdin->GetVelocity().y - FallAcceleration);
 		this->state = State::fall;
-	}*/
+	}
 
-	if (Aladdin->GetVelocity().y==0) {
+	/*if (Aladdin->GetVelocity().y==0) {
 		
 		this->state = State::Standing;
-	}
+	}*/
 	
+}
+
+bool AladinState::isbleeds()
+{
+	return isbleed;
 }
 
 
@@ -148,6 +158,16 @@ void AladinState::RunState(Keyboard *key) {
 	if (key->IsKeyDown(DIK_RIGHT) || key->IsKeyDown(DIK_LEFT))
 	{
 		this->state = State::run;
+		if (Aladdin->GetVelocity().y == -2)
+		{
+			state = State::fall;
+		}
+		else
+		{
+			
+				Aladdin->SetVelocityY(-2);
+			
+		}
 
 	}
 	else
@@ -166,14 +186,34 @@ void AladinState::Update(float dt, Keyboard* keyboard) {
 	{
 
 		delayattacktime += dt;
-
+		
 		if (delayattacktime > 0.42f)
 		{
-			printf("%f\n", dt);
+			
 			attack = false;
 			delayattack = false;
 			delayattacktime = 0;
+			//Aladdin->SetBound(20, 34);
+		}
+	}
 
+	if (isbleed) {
+		timebleed += dt;
+		if (timebleed > 1.0f) {
+			state = State::Standing;
+			isbleed = false;
+			
+			timebleed = 0;
+		}
+		else
+		{
+			if (side>0) {
+				Aladdin->SetVelocityX(-0.5);
+			}
+			else {
+				Aladdin->SetVelocityX(0.5);
+			}
+			
 		}
 	}
 }

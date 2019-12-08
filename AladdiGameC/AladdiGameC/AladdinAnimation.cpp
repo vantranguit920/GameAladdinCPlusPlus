@@ -9,6 +9,7 @@ void AladdinAnimation::standAnimation() {
 	repeat = true;
 	delay = 20;
 	start = 0; end = 37;
+	//start = 223; end = 227;
 }
 
 
@@ -110,7 +111,7 @@ void AladdinAnimation::climbVerticalFallAnimation() {
 void AladdinAnimation::damageAnimation() {
 	repeat = true;
 	delay = 20;
-	start = 142; end = 147;
+	start = 62; end = 65;
 }
 void AladdinAnimation::deathAnimation() {
 	repeat = true;

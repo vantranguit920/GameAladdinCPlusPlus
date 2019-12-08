@@ -10,7 +10,7 @@ class MapObject
 public:
 	string name;
 	float x, y, width, height;
-	int alow = 0;
+	
 	int id;
 	RECT getBound();
 	MapObject(TiXmlElement *node, string name);

@@ -13,11 +13,20 @@ protected:
 	Animation *batAnim;
 	Aladdin *aladin;
 	float timecout=0.0f;
+	bool dyed=false;
+	bool isFly = false;
+	D3DXVECTOR2 startpos;
 public:
+	enum BatState
+	{
+		stop,
+		fly,
+	};
+	BatState state;
 	void ChangeAnim(Keyboard* key);
 	void Update(float dt, Keyboard* key);
 	void Render(Viewport* viewport);
-	void setpos();
+
 	
 	Bat(Sprite *sprite, SpriteSheet *info, D3DXVECTOR2 pos, Aladdin *aladin);
 	Bat();

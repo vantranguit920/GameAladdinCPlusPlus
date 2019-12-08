@@ -211,7 +211,7 @@ Object::Tag Object::GetTag()
 
 Object::Tag Object::GetTag(string name)
 {
-	if (name == "HeadGunner" || name == "NotorBanger")
+	if (name == "Guard" || name == "Arow"|| name == "Pendu")
 	{
 		return Tag::Enemys;
 	}
@@ -228,6 +228,10 @@ void Object::SetTag(string name)
 	{
 		tag = Tag::Wall;
 	}
+	else if (name == "Ground")
+	{
+		tag = Tag::Ground;
+	}
 }
 
 //Tên
@@ -239,6 +243,8 @@ void Object::SetName(string name)
 {
 	this->name = name;
 }
+
+
 
 //Máu
 int Object::GetHP()

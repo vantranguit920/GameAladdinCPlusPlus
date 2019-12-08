@@ -109,6 +109,27 @@
     <ClCompile Include="Guard.cpp">
       <Filter>Map</Filter>
     </ClCompile>
+    <ClCompile Include="Skeleton.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="RodGuard.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Shop.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Apple.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="BonusLevel.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="SavePosition.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="SpendThese.cpp">
+      <Filter>Map</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h">
@@ -214,6 +235,27 @@
       <Filter>Stage</Filter>
     </ClInclude>
     <ClInclude Include="Guard.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Skeleton.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="RodGuard.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Shop.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Apple.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="BonusLevel.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="SavePosition.h">
+      <Filter>Map</Filter>
+    </ClInclude>
+    <ClInclude Include="SpendThese.h">
       <Filter>Map</Filter>
     </ClInclude>
   </ItemGroup>
