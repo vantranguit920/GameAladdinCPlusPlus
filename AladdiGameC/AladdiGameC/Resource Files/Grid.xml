@@ -2,211 +2,211 @@
 <Grid>
     <Cell x="0" y="0" w="250" h="250" numobject="6">
         <object name="Wall" x="1119" y="24" w="2234" h="36" id="2" />
+        <object name="Apple" x="86" y="143" w="12" h="14" id="199" />
         <object name="Wall" x="0" y="590" w="26" h="1121" id="9" />
         <object name="Apple" x="86" y="81" w="12" h="14" id="202" />
-        <object name="Apple" x="86" y="143" w="12" h="14" id="199" />
         <object name="Apple" x="54" y="111" w="12" h="14" id="200" />
         <object name="Apple" x="116" y="111" w="12" h="14" id="201" />
     </Cell>
     <Cell x="0" y="1" w="250" h="250" numobject="8">
+        <object name="Wall" x="1119" y="24" w="2234" h="36" id="2" />
         <object name="Ground" x="413" y="242" w="134" h="16" id="36" />
         <object name="Bat" x="357" y="163" w="18" h="18" id="183" />
-        <object name="Wall" x="1119" y="24" w="2234" h="36" id="2" />
-        <object name="Spend" x="422" y="102" w="24" h="20" id="209" />
-        <object name="Spend" x="372" y="136" w="24" h="20" id="208" />
         <object name="Wall" x="494" y="277" w="12" h="90" id="17" />
-        <object name="Ground" x="708" y="224" w="424" h="12" id="37" />
+        <object name="Spend" x="372" y="136" w="24" h="20" id="208" />
         <object name="Spend" x="316" y="102" w="24" h="20" id="207" />
+        <object name="Ground" x="708" y="224" w="424" h="12" id="37" />
+        <object name="Spend" x="422" y="102" w="24" h="20" id="209" />
     </Cell>
     <Cell x="0" y="2" w="250" h="250" numobject="6">
+        <object name="Skeleton" x="601" y="227" w="18" h="22" id="188" />
         <object name="Wall" x="1119" y="24" w="2234" h="36" id="2" />
+        <object name="Arow" x="719" y="69" w="26" h="22" id="151" />
         <object name="Wall" x="494" y="277" w="12" h="90" id="17" />
         <object name="Arow" x="719" y="121" w="26" h="22" id="149" />
-        <object name="Arow" x="719" y="69" w="26" h="22" id="151" />
-        <object name="Skeleton" x="601" y="227" w="18" h="22" id="188" />
         <object name="Ground" x="708" y="224" w="424" h="12" id="37" />
     </Cell>
     <Cell x="0" y="3" w="250" h="250" numobject="7">
         <object name="Wall" x="1119" y="24" w="2234" h="36" id="2" />
         <object name="Wall" x="919" y="269" w="9" h="75" id="31" />
-        <object name="Ground" x="708" y="224" w="424" h="12" id="37" />
-        <object name="Pendu" x="974" y="138" w="24" h="20" id="139" />
         <object name="Arow" x="783" y="71" w="26" h="22" id="152" />
+        <object name="Pendu" x="974" y="138" w="24" h="20" id="139" />
         <object name="Arow" x="783" y="119" w="26" h="22" id="150" />
         <object name="Guard" x="777" y="232" w="34" h="28" id="176" />
+        <object name="Ground" x="708" y="224" w="424" h="12" id="37" />
     </Cell>
     <Cell x="0" y="4" w="250" h="250" numobject="5">
-        <object name="Wall" x="1178" y="231" w="104" h="10" id="97" />
+        <object name="Pendu" x="1046" y="140" w="24" h="20" id="142" />
         <object name="Wall" x="1130" y="442" w="12" h="412" id="19" />
         <object name="Wall" x="1119" y="24" w="2234" h="36" id="2" />
-        <object name="Pendu" x="1046" y="140" w="24" h="20" id="142" />
+        <object name="Wall" x="1178" y="231" w="104" h="10" id="97" />
         <object name="Pendu" x="1114" y="140" w="24" h="20" id="143" />
     </Cell>
     <Cell x="0" y="5" w="250" h="250" numobject="7">
+        <object name="Brick" x="1316" y="113" w="22" h="11" id="108" />
         <object name="Wall" x="1119" y="24" w="2234" h="36" id="2" />
         <object name="Brick" x="1274" y="165" w="22" h="11" id="109" />
-        <object name="Guard" x="1409" y="52" w="34" h="28" id="163" />
         <object name="Wall" x="1531" y="383" w="95" h="726" id="26" />
         <object name="Wall" x="1444" y="208" w="64" h="12" id="79" />
-        <object name="Brick" x="1316" y="113" w="22" h="11" id="108" />
+        <object name="Guard" x="1409" y="52" w="34" h="28" id="163" />
         <object name="Brick" x="1356" y="199" w="22" h="11" id="110" />
     </Cell>
     <Cell x="0" y="6" w="250" h="250" numobject="8">
-        <object name="Wall" x="1119" y="24" w="2234" h="36" id="2" />
-        <object name="Wall" x="1531" y="383" w="95" h="726" id="26" />
-        <object name="Brick" x="1682" y="211" w="22" h="11" id="122" />
         <object name="Wall" x="1699" y="160" w="238" h="16" id="85" />
+        <object name="Wall" x="1119" y="24" w="2234" h="36" id="2" />
         <object name="Bat" x="1751" y="133" w="18" h="18" id="186" />
-        <object name="Arow" x="1741" y="231" w="26" h="22" id="159" />
-        <object name="Arow" x="1741" y="197" w="26" h="22" id="160" />
+        <object name="Wall" x="1531" y="383" w="95" h="726" id="26" />
         <object name="RodGuard" x="1626" y="169" w="24" h="22" id="196" />
+        <object name="Arow" x="1741" y="197" w="26" h="22" id="160" />
+        <object name="Arow" x="1741" y="231" w="26" h="22" id="159" />
+        <object name="Brick" x="1682" y="211" w="22" h="11" id="122" />
     </Cell>
     <Cell x="0" y="7" w="250" h="250" numobject="7">
-        <object name="Wall" x="1119" y="24" w="2234" h="36" id="2" />
         <object name="Wall" x="1699" y="160" w="238" h="16" id="85" />
-        <object name="Wall" x="1874" y="116" w="168" h="8" id="93" />
+        <object name="Wall" x="1119" y="24" w="2234" h="36" id="2" />
         <object name="Bat" x="1751" y="133" w="18" h="18" id="186" />
-        <object name="Arow" x="1741" y="231" w="26" h="22" id="159" />
+        <object name="Wall" x="1874" y="116" w="168" h="8" id="93" />
         <object name="Brick" x="2006" y="99" w="22" h="11" id="136" />
         <object name="Arow" x="1741" y="197" w="26" h="22" id="160" />
+        <object name="Arow" x="1741" y="231" w="26" h="22" id="159" />
     </Cell>
     <Cell x="0" y="8" w="250" h="250" numobject="7">
         <object name="Wall" x="1119" y="24" w="2234" h="36" id="2" />
         <object name="Wall" x="2243" y="579" w="20" h="1144" id="10" />
-        <object name="Brick" x="2006" y="99" w="22" h="11" id="136" />
-        <object name="Brick" x="2138" y="195" w="22" h="11" id="133" />
+        <object name="Brick" x="2070" y="139" w="22" h="11" id="135" />
         <object name="Guard" x="2093" y="48" w="34" h="28" id="182" />
         <object name="Brick" x="2072" y="231" w="22" h="11" id="132" />
-        <object name="Brick" x="2070" y="139" w="22" h="11" id="135" />
+        <object name="Brick" x="2138" y="195" w="22" h="11" id="133" />
+        <object name="Brick" x="2006" y="99" w="22" h="11" id="136" />
     </Cell>
     <Cell x="1" y="0" w="250" h="250" numobject="7">
-        <object name="Ground" x="292" y="272" w="112" h="16" id="35" />
         <object name="Wall" x="0" y="590" w="26" h="1121" id="9" />
         <object name="Wall" x="246" y="436" w="16" h="308" id="27" />
+        <object name="Ground" x="292" y="272" w="112" h="16" id="35" />
         <object name="Wall" x="192" y="387" w="124" h="10" id="44" />
+        <object name="Guard" x="29" y="438" w="34" h="28" id="174" />
         <object name="Wall" x="78" y="432" w="128" h="12" id="46" />
         <object name="Arow" x="131" y="503" w="26" h="22" id="148" />
-        <object name="Guard" x="29" y="438" w="34" h="28" id="174" />
     </Cell>
     <Cell x="1" y="1" w="250" h="250" numobject="13">
-        <object name="Savepoint" x="279" y="308" w="22" h="20" id="210" />
-        <object name="Wall" x="192" y="387" w="124" h="10" id="44" />
         <object name="Wall" x="439" y="565" w="10" h="254" id="14" />
-        <object name="Wall" x="608" y="435" w="348" h="10" id="41" />
         <object name="Wall" x="494" y="277" w="12" h="90" id="17" />
-        <object name="Brick" x="365" y="433" w="22" h="11" id="100" />
         <object name="Wall" x="246" y="436" w="16" h="308" id="27" />
+        <object name="Wall" x="608" y="435" w="348" h="10" id="41" />
+        <object name="Wall" x="192" y="387" w="124" h="10" id="44" />
+        <object name="Savepoint" x="279" y="308" w="22" h="20" id="210" />
         <object name="Brick" x="368" y="345" w="22" h="11" id="98" />
         <object name="Brick" x="307" y="394" w="22" h="11" id="99" />
+        <object name="Brick" x="365" y="433" w="22" h="11" id="100" />
         <object name="Brick" x="308" y="489" w="22" h="11" id="101" />
         <object name="Ground" x="292" y="272" w="112" h="16" id="35" />
         <object name="Ground" x="413" y="242" w="134" h="16" id="36" />
         <object name="Ground" x="525" y="321" w="178" h="10" id="38" />
     </Cell>
     <Cell x="1" y="2" w="250" h="250" numobject="4">
-        <object name="Wall" x="608" y="435" w="348" h="10" id="41" />
         <object name="Wall" x="494" y="277" w="12" h="90" id="17" />
+        <object name="Wall" x="608" y="435" w="348" h="10" id="41" />
         <object name="Brick" x="696" y="283" w="22" h="11" id="107" />
         <object name="Ground" x="525" y="321" w="178" h="10" id="38" />
     </Cell>
     <Cell x="1" y="3" w="250" h="250" numobject="11">
-        <object name="Wall" x="919" y="269" w="9" h="75" id="31" />
-        <object name="Wall" x="976" y="468" w="52" h="8" id="74" />
-        <object name="Wall" x="1017" y="304" w="206" h="12" id="39" />
-        <object name="Wall" x="608" y="435" w="348" h="10" id="41" />
-        <object name="Skeleton" x="955" y="308" w="18" h="20" id="189" />
         <object name="Wall" x="957" y="453" w="10" h="34" id="73" />
-        <object name="Wall" x="905" y="437" w="110" h="6" id="71" />
-        <object name="Wall" x="867" y="423" w="10" h="26" id="138" />
-        <object name="Wall" x="771" y="423" w="10" h="26" id="137" />
+        <object name="Wall" x="1017" y="304" w="206" h="12" id="39" />
+        <object name="Wall" x="919" y="269" w="9" h="75" id="31" />
+        <object name="Wall" x="608" y="435" w="348" h="10" id="41" />
         <object name="Wall" x="828" y="408" w="116" h="8" id="72" />
+        <object name="Wall" x="905" y="437" w="110" h="6" id="71" />
+        <object name="Wall" x="976" y="468" w="52" h="8" id="74" />
+        <object name="Wall" x="771" y="423" w="10" h="26" id="137" />
+        <object name="Wall" x="867" y="423" w="10" h="26" id="138" />
+        <object name="Skeleton" x="955" y="308" w="18" h="20" id="189" />
         <object name="Skeleton" x="983" y="469" w="18" h="22" id="190" />
     </Cell>
     <Cell x="1" y="4" w="250" h="250" numobject="8">
-        <object name="Wall" x="1130" y="442" w="12" h="412" id="19" />
-        <object name="Wall" x="1208" y="449" w="140" h="14" id="75" />
-        <object name="Wall" x="976" y="468" w="52" h="8" id="74" />
-        <object name="Wall" x="1017" y="304" w="206" h="12" id="39" />
         <object name="Wall" x="1087" y="371" w="66" h="10" id="40" />
+        <object name="Wall" x="1130" y="442" w="12" h="412" id="19" />
+        <object name="Wall" x="1017" y="304" w="206" h="12" id="39" />
         <object name="Wall" x="1320" y="389" w="144" h="10" id="76" />
+        <object name="Wall" x="976" y="468" w="52" h="8" id="74" />
+        <object name="Wall" x="1208" y="449" w="140" h="14" id="75" />
         <object name="Arow" x="1033" y="461" w="26" h="22" id="153" />
         <object name="Arow" x="1087" y="461" w="26" h="22" id="154" />
     </Cell>
     <Cell x="1" y="5" w="250" h="250" numobject="10">
         <object name="Wall" x="1531" y="383" w="95" h="726" id="26" />
-        <object name="Brick" x="1266" y="257" w="22" h="11" id="111" />
-        <object name="Wall" x="1367" y="325" w="102" h="10" id="77" />
         <object name="Skeleton" x="1357" y="392" w="18" h="24" id="192" />
         <object name="Wall" x="1258" y="425" w="14" h="56" id="32" />
         <object name="Wall" x="1337" y="357" w="13" h="45" id="33" />
         <object name="Wall" x="1208" y="449" w="140" h="14" id="75" />
         <object name="Wall" x="1320" y="389" w="144" h="10" id="76" />
         <object name="Wall" x="1456" y="274" w="48" h="12" id="78" />
+        <object name="Wall" x="1367" y="325" w="102" h="10" id="77" />
+        <object name="Brick" x="1266" y="257" w="22" h="11" id="111" />
         <object name="Brick" x="1304" y="489" w="22" h="11" id="112" />
     </Cell>
     <Cell x="1" y="6" w="250" h="250" numobject="9">
-        <object name="Wall" x="1738" y="370" w="176" h="8" id="83" />
-        <object name="Arow" x="1743" y="343" w="26" h="22" id="162" />
-        <object name="Wall" x="1531" y="383" w="95" h="726" id="26" />
         <object name="Arow" x="1741" y="267" w="26" h="22" id="158" />
-        <object name="Wall" x="1626" y="419" w="92" h="10" id="82" />
-        <object name="Skeleton" x="1741" y="377" w="18" h="18" id="193" />
         <object name="Wall" x="1657" y="394" w="14" h="44" id="84" />
+        <object name="Wall" x="1531" y="383" w="95" h="726" id="26" />
+        <object name="Wall" x="1626" y="419" w="92" h="10" id="82" />
+        <object name="Arow" x="1743" y="343" w="26" h="22" id="162" />
+        <object name="Wall" x="1738" y="370" w="176" h="8" id="83" />
         <object name="Arow" x="1743" y="305" w="26" h="22" id="161" />
+        <object name="Skeleton" x="1741" y="377" w="18" h="18" id="193" />
         <object name="Brick" x="1634" y="263" w="22" h="11" id="123" />
     </Cell>
     <Cell x="1" y="7" w="250" h="250" numobject="7">
-        <object name="Arow" x="1741" y="267" w="26" h="22" id="158" />
         <object name="Wall" x="1923" y="416" w="10" h="224" id="25" />
         <object name="Arow" x="1743" y="343" w="26" h="22" id="162" />
         <object name="Wall" x="1738" y="370" w="176" h="8" id="83" />
         <object name="Wall" x="1878" y="296" w="100" h="8" id="88" />
+        <object name="Arow" x="1741" y="267" w="26" h="22" id="158" />
         <object name="Arow" x="1743" y="305" w="26" h="22" id="161" />
         <object name="Skeleton" x="1741" y="377" w="18" h="18" id="193" />
     </Cell>
     <Cell x="1" y="8" w="250" h="250" numobject="8">
-        <object name="Brick" x="2070" y="313" w="22" h="11" id="130" />
+        <object name="Wall" x="2209" y="325" w="50" h="10" id="96" />
         <object name="Wall" x="2243" y="579" w="20" h="1144" id="10" />
         <object name="Wall" x="2193" y="435" w="94" h="14" id="94" />
-        <object name="Brick" x="2146" y="279" w="22" h="11" id="131" />
-        <object name="Brick" x="2088" y="405" w="22" h="11" id="128" />
-        <object name="RodGuard" x="2224" y="329" w="24" h="22" id="197" />
-        <object name="Wall" x="2209" y="325" w="50" h="10" id="96" />
         <object name="Brick" x="2016" y="361" w="22" h="11" id="129" />
+        <object name="RodGuard" x="2224" y="329" w="24" h="22" id="197" />
+        <object name="Brick" x="2088" y="405" w="22" h="11" id="128" />
+        <object name="Brick" x="2146" y="279" w="22" h="11" id="131" />
+        <object name="Brick" x="2070" y="313" w="22" h="11" id="130" />
     </Cell>
     <Cell x="2" y="0" w="250" h="250" numobject="7">
         <object name="Bat" x="249" y="715" w="18" h="18" id="185" />
         <object name="Wall" x="0" y="590" w="26" h="1121" id="9" />
-        <object name="Guard" x="193" y="590" w="34" h="28" id="175" />
-        <object name="Wall" x="246" y="436" w="16" h="308" id="27" />
-        <object name="Arow" x="131" y="503" w="26" h="22" id="148" />
-        <object name="Wall" x="198" y="592" w="128" h="8" id="45" />
         <object name="Wall" x="53" y="644" w="90" h="8" id="47" />
+        <object name="Wall" x="246" y="436" w="16" h="308" id="27" />
+        <object name="Wall" x="198" y="592" w="128" h="8" id="45" />
+        <object name="Arow" x="131" y="503" w="26" h="22" id="148" />
+        <object name="Guard" x="193" y="590" w="34" h="28" id="175" />
     </Cell>
     <Cell x="2" y="1" w="250" h="250" numobject="6">
-        <object name="Wall" x="246" y="436" w="16" h="308" id="27" />
         <object name="Wall" x="454" y="765" w="12" h="182" id="13" />
         <object name="Wall" x="439" y="565" w="10" h="254" id="14" />
+        <object name="Wall" x="540" y="680" w="204" h="12" id="55" />
+        <object name="Wall" x="246" y="436" w="16" h="308" id="27" />
         <object name="Wall" x="198" y="592" w="128" h="8" id="45" />
         <object name="Bat" x="249" y="715" w="18" h="18" id="185" />
-        <object name="Wall" x="540" y="680" w="204" h="12" id="55" />
     </Cell>
     <Cell x="2" y="2" w="250" h="250" numobject="8">
-        <object name="Pendu" x="704" y="530" w="24" h="20" id="147" />
-        <object name="Wall" x="540" y="680" w="204" h="12" id="55" />
         <object name="Wall" x="714" y="752" w="16" h="38" id="30" />
         <object name="Wall" x="733" y="554" w="350" h="12" id="42" />
-        <object name="Wall" x="675" y="723" w="98" h="10" id="56" />
-        <object name="Pendu" x="580" y="528" w="24" h="20" id="146" />
         <object name="Pendu" x="578" y="660" w="24" h="20" id="144" />
+        <object name="Wall" x="540" y="680" w="204" h="12" id="55" />
+        <object name="Pendu" x="580" y="528" w="24" h="20" id="146" />
+        <object name="Wall" x="675" y="723" w="98" h="10" id="56" />
         <object name="Pendu" x="702" y="658" w="24" h="20" id="145" />
+        <object name="Pendu" x="704" y="530" w="24" h="20" id="147" />
     </Cell>
     <Cell x="2" y="3" w="250" h="250" numobject="5">
-        <object name="Wall" x="901" y="593" w="9" h="56" id="29" />
+        <object name="Wall" x="923" y="626" w="98" h="8" id="68" />
         <object name="Wall" x="966" y="660" w="10" h="54" id="28" />
+        <object name="Wall" x="901" y="593" w="9" h="56" id="29" />
         <object name="Wall" x="733" y="554" w="350" h="12" id="42" />
         <object name="Wall" x="1024" y="690" w="156" h="8" id="69" />
-        <object name="Wall" x="923" y="626" w="98" h="8" id="68" />
     </Cell>
     <Cell x="2" y="4" w="250" h="250" numobject="3">
         <object name="Wall" x="1130" y="442" w="12" h="412" id="19" />
@@ -214,118 +214,118 @@
         <object name="Wall" x="1148" y="661" w="164" h="10" id="70" />
     </Cell>
     <Cell x="2" y="5" w="250" h="250" numobject="6">
-        <object name="Wall" x="1531" y="383" w="95" h="726" id="26" />
-        <object name="Wall" x="1440" y="531" w="88" h="10" id="80" />
-        <object name="Brick" x="1314" y="643" w="22" h="11" id="114" />
-        <object name="Arow" x="1333" y="527" w="26" h="22" id="156" />
         <object name="Arow" x="1333" y="571" w="26" h="22" id="155" />
+        <object name="Wall" x="1531" y="383" w="95" h="726" id="26" />
         <object name="Brick" x="1376" y="589" w="22" h="11" id="113" />
+        <object name="Wall" x="1440" y="531" w="88" h="10" id="80" />
+        <object name="Arow" x="1333" y="527" w="26" h="22" id="156" />
+        <object name="Brick" x="1314" y="643" w="22" h="11" id="114" />
     </Cell>
     <Cell x="2" y="6" w="250" h="250" numobject="4">
         <object name="Wall" x="1531" y="383" w="95" h="726" id="26" />
-        <object name="Skeleton" x="1681" y="616" w="18" h="20" id="195" />
-        <object name="Wall" x="1600" y="531" w="44" h="10" id="81" />
         <object name="Wall" x="1708" y="610" w="160" h="16" id="86" />
+        <object name="Wall" x="1600" y="531" w="44" h="10" id="81" />
+        <object name="Skeleton" x="1681" y="616" w="18" h="20" id="195" />
     </Cell>
     <Cell x="2" y="7" w="250" h="250" numobject="7">
-        <object name="Brick" x="1968" y="651" w="22" h="11" id="126" />
-        <object name="Skeleton" x="1865" y="535" w="18" h="22" id="194" />
         <object name="Wall" x="1785" y="844" w="14" h="604" id="24" />
-        <object name="Wall" x="1923" y="416" w="10" h="224" id="25" />
         <object name="Wall" x="1708" y="610" w="160" h="16" id="86" />
+        <object name="Wall" x="1923" y="416" w="10" h="224" id="25" />
         <object name="Wall" x="1861" y="537" w="170" h="6" id="87" />
         <object name="Bat" x="1791" y="509" w="18" h="18" id="187" />
+        <object name="Brick" x="1968" y="651" w="22" h="11" id="126" />
+        <object name="Skeleton" x="1865" y="535" w="18" h="22" id="194" />
     </Cell>
     <Cell x="2" y="8" w="250" h="250" numobject="5">
         <object name="Wall" x="2243" y="579" w="20" h="1144" id="10" />
         <object name="Wall" x="2134" y="691" w="196" h="10" id="90" />
-        <object name="Wall" x="2163" y="549" w="146" h="6" id="95" />
         <object name="Guard" x="2141" y="550" w="34" h="28" id="181" />
+        <object name="Wall" x="2163" y="549" w="146" h="6" id="95" />
         <object name="Brick" x="2014" y="593" w="22" h="11" id="127" />
     </Cell>
     <Cell x="3" y="0" w="250" h="250" numobject="5">
-        <object name="Wall" x="0" y="590" w="26" h="1121" id="9" />
         <object name="Wall" x="253" y="849" w="14" h="110" id="11" />
+        <object name="Wall" x="0" y="590" w="26" h="1121" id="9" />
         <object name="Wall" x="60" y="850" w="92" h="8" id="48" />
         <object name="Wall" x="196" y="908" w="132" h="8" id="49" />
         <object name="Wall" x="198" y="788" w="128" h="12" id="50" />
     </Cell>
     <Cell x="3" y="1" w="250" h="250" numobject="9">
-        <object name="Wall" x="419" y="914" w="98" h="12" id="52" />
         <object name="Wall" x="253" y="849" w="14" h="110" id="11" />
-        <object name="Wall" x="454" y="765" w="12" h="182" id="13" />
         <object name="Wall" x="377" y="771" w="122" h="10" id="54" />
+        <object name="Wall" x="419" y="914" w="98" h="12" id="52" />
+        <object name="Wall" x="454" y="765" w="12" h="182" id="13" />
         <object name="Wall" x="196" y="908" w="132" h="8" id="49" />
-        <object name="Wall" x="198" y="788" w="128" h="12" id="50" />
         <object name="Wall" x="322" y="867" w="128" h="10" id="51" />
+        <object name="Wall" x="198" y="788" w="128" h="12" id="50" />
         <object name="Wall" x="506" y="853" w="108" h="6" id="53" />
         <object name="Shop" x="380" y="777" w="24" h="26" id="198" />
     </Cell>
     <Cell x="3" y="2" w="250" h="250" numobject="7">
         <object name="Brick" x="640" y="927" w="22" h="11" id="103" />
         <object name="Wall" x="714" y="752" w="16" h="38" id="30" />
-        <object name="Wall" x="506" y="853" w="108" h="6" id="53" />
-        <object name="Brick" x="634" y="999" w="22" h="11" id="105" />
         <object name="Brick" x="594" y="881" w="22" h="11" id="102" />
+        <object name="Wall" x="506" y="853" w="108" h="6" id="53" />
         <object name="Wall" x="749" y="773" w="82" h="10" id="57" />
+        <object name="Brick" x="634" y="999" w="22" h="11" id="105" />
         <object name="Brick" x="682" y="969" w="22" h="11" id="104" />
     </Cell>
     <Cell x="3" y="3" w="250" h="250" numobject="7">
+        <object name="Guard" x="991" y="870" w="34" h="28" id="177" />
         <object name="Wall" x="777" y="1022" w="14" h="184" id="15" />
-        <object name="Wall" x="884" y="820" w="40" h="12" id="60" />
         <object name="Wall" x="749" y="773" w="82" h="10" id="57" />
         <object name="Wall" x="843" y="927" w="134" h="14" id="59" />
         <object name="Wall" x="839" y="805" w="134" h="10" id="58" />
-        <object name="Guard" x="991" y="870" w="34" h="28" id="177" />
+        <object name="Wall" x="884" y="820" w="40" h="12" id="60" />
         <object name="Wall" x="1023" y="869" w="186" h="10" id="61" />
     </Cell>
     <Cell x="3" y="4" w="250" h="250" numobject="9">
         <object name="Wall" x="1127" y="878" w="10" h="100" id="20" />
-        <object name="Guard" x="991" y="870" w="34" h="28" id="177" />
+        <object name="Wall" x="1191" y="820" w="138" h="8" id="63" />
         <object name="Wall" x="1023" y="869" w="186" h="10" id="61" />
         <object name="Wall" x="1179" y="936" w="170" h="8" id="62" />
-        <object name="Wall" x="1191" y="820" w="138" h="8" id="63" />
-        <object name="Skeleton" x="1195" y="823" w="18" h="22" id="191" />
         <object name="Wall" x="1480" y="769" w="476" h="14" id="64" />
-        <object name="Bat" x="1013" y="771" w="18" h="18" id="184" />
+        <object name="Guard" x="991" y="870" w="34" h="28" id="177" />
         <object name="Guard" x="1187" y="938" w="34" h="28" id="178" />
+        <object name="Bat" x="1013" y="771" w="18" h="18" id="184" />
+        <object name="Skeleton" x="1195" y="823" w="18" h="22" id="191" />
     </Cell>
     <Cell x="3" y="5" w="250" h="250" numobject="7">
-        <object name="Guard" x="1375" y="774" w="34" h="28" id="179" />
-        <object name="Wall" x="1473" y="931" w="162" h="10" id="66" />
         <object name="Wall" x="1179" y="936" w="170" h="8" id="62" />
         <object name="Wall" x="1191" y="820" w="138" h="8" id="63" />
+        <object name="Guard" x="1375" y="774" w="34" h="28" id="179" />
         <object name="Wall" x="1480" y="769" w="476" h="14" id="64" />
-        <object name="Wall" x="1362" y="882" w="104" h="12" id="67" />
+        <object name="Wall" x="1473" y="931" w="162" h="10" id="66" />
         <object name="Brick" x="1462" y="811" w="22" h="11" id="115" />
+        <object name="Wall" x="1362" y="882" w="104" h="12" id="67" />
     </Cell>
     <Cell x="3" y="6" w="250" h="250" numobject="12">
-        <object name="Arow" x="1531" y="893" w="26" h="22" id="157" />
-        <object name="Wall" x="1528" y="812" w="16" h="80" id="23" />
-        <object name="Wall" x="1719" y="901" w="10" h="254" id="22" />
-        <object name="Wall" x="1546" y="1043" w="16" h="218" id="21" />
-        <object name="Wall" x="1480" y="769" w="476" h="14" id="64" />
-        <object name="Wall" x="1528" y="859" w="48" h="10" id="65" />
-        <object name="Brick" x="1598" y="813" w="22" h="11" id="116" />
-        <object name="Wall" x="1473" y="931" w="162" h="10" id="66" />
-        <object name="Brick" x="1660" y="861" w="22" h="11" id="117" />
         <object name="Brick" x="1598" y="891" w="22" h="11" id="118" />
+        <object name="Wall" x="1473" y="931" w="162" h="10" id="66" />
+        <object name="Wall" x="1546" y="1043" w="16" h="218" id="21" />
+        <object name="Wall" x="1719" y="901" w="10" h="254" id="22" />
+        <object name="Wall" x="1528" y="812" w="16" h="80" id="23" />
+        <object name="Arow" x="1531" y="893" w="26" h="22" id="157" />
+        <object name="Wall" x="1528" y="859" w="48" h="10" id="65" />
+        <object name="Wall" x="1480" y="769" w="476" h="14" id="64" />
+        <object name="Brick" x="1598" y="813" w="22" h="11" id="116" />
+        <object name="Brick" x="1660" y="861" w="22" h="11" id="117" />
         <object name="Brick" x="1660" y="939" w="22" h="11" id="119" />
         <object name="Brick" x="1596" y="977" w="22" h="11" id="120" />
     </Cell>
     <Cell x="3" y="7" w="250" h="250" numobject="6">
-        <object name="Wall" x="1873" y="772" w="158" h="8" id="89" />
         <object name="Wall" x="1785" y="844" w="14" h="604" id="24" />
-        <object name="Brick" x="2002" y="767" w="22" h="11" id="125" />
+        <object name="Wall" x="1873" y="772" w="158" h="8" id="89" />
         <object name="Wall" x="2006" y="897" w="256" h="10" id="91" />
-        <object name="Brick" x="1834" y="831" w="22" h="11" id="124" />
         <object name="Guard" x="1967" y="904" w="34" h="28" id="180" />
+        <object name="Brick" x="2002" y="767" w="22" h="11" id="125" />
+        <object name="Brick" x="1834" y="831" w="22" h="11" id="124" />
     </Cell>
     <Cell x="3" y="8" w="250" h="250" numobject="4">
         <object name="Wall" x="2243" y="579" w="20" h="1144" id="10" />
-        <object name="Brick" x="2002" y="767" w="22" h="11" id="125" />
-        <object name="Wall" x="2137" y="931" w="111" h="10" id="92" />
         <object name="Wall" x="2006" y="897" w="256" h="10" id="91" />
+        <object name="Wall" x="2137" y="931" w="111" h="10" id="92" />
+        <object name="Brick" x="2002" y="767" w="22" h="11" id="125" />
     </Cell>
     <Cell x="4" y="0" w="250" h="250" numobject="1">
         <object name="Wall" x="0" y="590" w="26" h="1121" id="9" />
@@ -341,9 +341,9 @@
     <Cell x="4" y="4" w="250" h="250" numobject="0" />
     <Cell x="4" y="5" w="250" h="250" numobject="0" />
     <Cell x="4" y="6" w="250" h="250" numobject="3">
-        <object name="Brick" x="1654" y="1037" w="22" h="11" id="121" />
-        <object name="Wall" x="1719" y="901" w="10" h="254" id="22" />
         <object name="Wall" x="1546" y="1043" w="16" h="218" id="21" />
+        <object name="Wall" x="1719" y="901" w="10" h="254" id="22" />
+        <object name="Brick" x="1654" y="1037" w="22" h="11" id="121" />
     </Cell>
     <Cell x="4" y="7" w="250" h="250" numobject="1">
         <object name="Wall" x="1785" y="844" w="14" h="604" id="24" />
