@@ -1,1 +1,4 @@
-﻿  AladdiGameC.vcxproj -> E:\Aladdina\GameAladdinCPlusPlus\AladdiGameC\Debug\AladdiGameC.exe
+﻿  Scene.cpp
+  C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+E:\Aladdina\GameAladdinCPlusPlus\AladdiGameC\AladdiGameC\Scene.cpp(117,40): warning C4305: 'argument': truncation from 'double' to 'FLOAT'
+  AladdiGameC.vcxproj -> E:\Aladdina\GameAladdinCPlusPlus\AladdiGameC\Debug\AladdiGameC.exe

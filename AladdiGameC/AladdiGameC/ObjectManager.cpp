@@ -15,8 +15,17 @@ ObjectManager::~ObjectManager()
 
 }
 
+int ObjectManager::End() {
+
+	return 0;
+}
+void ObjectManager::Start() {
+	aladin = new Aladdin(spriteAladdin, infoAlddin);
+	
+}
+
 //Load Game
-void ObjectManager::Init(Graphic* graphic)
+void ObjectManager::Init(Graphic* graphic, Sound* sound)
 {
 
 	this->sound = new Sound(graphic->GetHwnd());
@@ -25,6 +34,7 @@ void ObjectManager::Init(Graphic* graphic)
 	//
 	spriteAladdin = new Sprite(graphic, "AladinAnimXml.png", D3DCOLOR_XRGB(255, 0, 255));
 	infoAlddin = new SpriteSheet("AladinAnimXml.xml");
+	//
 	spriteBrick = new Sprite(graphic, "./Resource Files/Brick.png", D3DCOLOR_XRGB(163, 73, 164));
 	infoBrick = new SpriteSheet("./Resource Files/Brickxml.xml");
 	//
@@ -33,6 +43,7 @@ void ObjectManager::Init(Graphic* graphic)
 	//
 	spriteArrow = new Sprite(graphic, "./Resource Files/arrow.png", D3DCOLOR_XRGB(163, 73, 164));
 	infoArrow = new SpriteSheet("./Resource Files/arrow.xml");
+	//
 	spriteGuard = new Sprite(graphic,"./Resource Files/Guard.png", D3DCOLOR_XRGB(163, 73, 164));
 	infoGuard = new SpriteSheet("./Resource Files/Guard.xml");
 	//

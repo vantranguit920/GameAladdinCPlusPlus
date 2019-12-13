@@ -14,7 +14,7 @@ Sprite::Sprite(Graphic* graphic, const char* pathpng, D3DCOLOR colors)
 	this->scale = D3DXVECTOR2(1, 1);
 	transform = D3DXVECTOR2(0, 0);
 	position = D3DXVECTOR2(0, 0);
-	
+	color = D3DCOLOR_XRGB(225, 225, 225);
 	angle = 0;
 	flipFlag = false;
 }

@@ -4,12 +4,11 @@
 
 Aladdin::Aladdin()
 {
+
 }
 
 Aladdin::Aladdin(Sprite *spAla, SpriteSheet *ifoAla)
 {
-
-
 	tag = Object::Player;
 	//pathPNG = "aladdin.png";
 	sprite = spAla;

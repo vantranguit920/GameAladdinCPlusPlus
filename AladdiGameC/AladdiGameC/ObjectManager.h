@@ -102,10 +102,12 @@ protected:
 public:
 	ObjectManager();
 	~ObjectManager();
-	void Init(Graphic* graphic);
+	void Init(Graphic* graphic, Sound* sound);
 	//Update Game sau khoảng thời gian dt
 	void Update(float dt, Keyboard* key);
 	//Vẽ Object lên màn hình 
 	void Render();
+	void Start();
+	int End();
 	void ReadGrid(TiXmlElement *root,Grid *grid);	
 };
