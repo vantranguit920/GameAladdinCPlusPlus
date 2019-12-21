@@ -15,7 +15,13 @@ protected:
 	Aladdin* aladdin;
 	Viewport* viewport;
 	bool isDie = false;
+	bool isbleed = false;
+	int angry;
 	float timeout = 0.0f;
+	int hpGuard;
+	Sound *sound;
+	GSound *soundComon;
+	GSound *soundDie;
 public:
 	Guard();
 	Guard(Sprite* spGuard, SpriteSheet* ifoGuard, D3DXVECTOR2 pos, Aladdin* aladdin);
@@ -26,16 +32,17 @@ public:
 		Common,
 		HitByBullets,
 		GuillotineKnife,
+		stand,
 	};
 
 	GuardState state;
 	void ChangeAnimation(Keyboard* key);
 
 	void OnCollision(Object* obj, D3DXVECTOR2 distance);
-
+	void OnCollision();
 	void Update(float dt, Keyboard* key);
 	void Render(Viewport* viewport);
-
+	void bleed(int dame);
 	void SetAllowDraw(bool allow);
 	void SetState(GuardState state);
 	void GetState();

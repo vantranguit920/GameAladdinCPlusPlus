@@ -8,7 +8,7 @@ namespace Define
 	const float GameWidth = 500.0f;
 	const float GameHeight = 500.0f;
 
-	
+
 	//Map
 	const char TileSetPNG[] = "./Resource Files/aladin.png";
 	const char MapXML[] = "./Resource Files/Mapscene1.tmx";
@@ -16,7 +16,11 @@ namespace Define
 	const char GridXML[] = "./Resource Files/Grid.xml";
 	const char MapXML3[] = "./Resource Files/MapAla3.tmx";
 	const char TileSetPNG3[] = "./Resource Files/map3.png";
-	
+
+	const char MapBoss[] = "./Resource Files/MapbossAladdin.tmx";
+	const char MapBoss2[] = "./Resource Files/MapbossAladdin2.tmx";
+	const char TileSetBoss[] = "./Resource Files/final.png";
+
 
 	//Speed
 	const float RunSpeed = 2.0f;
@@ -36,5 +40,7 @@ namespace Define
 
 	//Time
 	const float DelayAnimation = 0.2f;
-	
+
+
+
 }

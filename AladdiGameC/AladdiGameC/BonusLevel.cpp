@@ -10,8 +10,10 @@ BonusLevel::BonusLevel(Sprite* spBonusLevel, SpriteSheet* info, D3DXVECTOR2 pos,
 	this->BonusLevelAnim = new Animation(info);
 	transform = D3DXVECTOR2(0, 0);
 	position = pos;
-
-	SetBound(10, 10);
+	this->sound = new Sound(Graphic::getInstance()->GetHwnd());
+	this->sound->Init_DirectSound();
+	this->bonusSound = this->sound->LoadSound("./Sound/Wow!.wav");
+	SetBound(20, 20);
 	allowDraw = true;
 	flipFlag = false;
 	this->state = BonusLevelState::Show;
@@ -22,10 +24,10 @@ BonusLevel::BonusLevel(Sprite* spBonusLevel, SpriteSheet* info, D3DXVECTOR2 pos,
 void BonusLevel::ChangeAnimation(Keyboard* key) {
 	switch (this->state) {
 	case BonusLevelState::Hitted:
-		BonusLevelAnim->SetFrame(position, flipFlag, 20, 4, 17, false);
+		BonusLevelAnim->SetFrame(position, flipFlag, 20, 4, 10, false);
 		break;
 	case BonusLevelState::Show:
-		BonusLevelAnim->SetFrame(position, flipFlag, 20, 0, 3, false);
+		BonusLevelAnim->SetFrame(position, flipFlag, 20, 0, 3, true);
 		break;
 	
 	}
@@ -33,27 +35,23 @@ void BonusLevel::ChangeAnimation(Keyboard* key) {
 
 void BonusLevel::Update(float dt, Keyboard* key) {
 
-	D3DXVECTOR2 posAla = aladdin->GetPosition();
-	if (abs(aladdin->GetPosition().x - position.x) < 40) {
-		this->state = BonusLevelState::Hitted;
+	if (BonusLevelAnim->GetIndex() == 10) {
+		this->SetAllowDraw(false);
 	}
-
-	if (timeout >= 0.2f) {
-
-		timeout = 0.0;
-	}
-
-	timeout += dt;
 	ChangeAnimation(key);
 	Object::Update(dt, key);
 	BonusLevelAnim->Update(dt, key);
 }
-void BonusLevel::OnCollision(Object* obj, D3DXVECTOR2 distance, D3DXVECTOR2 disBonusLevel) {
+void BonusLevel::OnCollision(Object* obj, D3DXVECTOR2 distance) {
+	if (Collision::isCollision(this->GetBound(), aladdin->GetBound2())) {
+		this->state = BonusLevelState::Hitted;
+		sound->PlaySoundA(bonusSound);
+	}
 }
 void BonusLevel::Render(Viewport* viewport) {
-	if (viewport->isContains(this->GetBound())) {
-		this->allowDraw = true;
-
+	/*if (viewport->isContains(this->GetBound())) {
+		this->allowDraw = true;*/
+	if (this->GetAllowDraw()) {
 		this->sprite->SetData(
 			BonusLevelAnim->GetRect(),
 			BonusLevelAnim->GetCenter(),
@@ -62,13 +60,15 @@ void BonusLevel::Render(Viewport* viewport) {
 			BonusLevelAnim->GetTransform(),
 			BonusLevelAnim->GetAngle());
 
-		this->sprite->SetScale(D3DXVECTOR2(1.5, 1.5));
+		this->sprite->SetScale(D3DXVECTOR2(1.0f, 1.0f));
 		this->sprite->Render(viewport);
 	}
+		
+	/*}
 	else {
 		this->allowDraw = false;
 		BonusLevelAnim->SetIndex(0);
-	}
+	}*/
 }
 void BonusLevel::SetAllowDraw(bool allow) {
 	this->allowDraw = allow;

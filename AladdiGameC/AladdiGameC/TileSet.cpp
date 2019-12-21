@@ -5,11 +5,11 @@ TileSet::TileSet()
 
 }
 
-TileSet::TileSet(Graphic* graphic, TiXmlElement *node, const char* pathpng)
+TileSet::TileSet(Graphic* graphic, TiXmlElement *node, const char* pathpng, D3DCOLOR colors)
 {
 	ReadXML(node);
 
-	sprite = new Sprite(graphic, pathpng, D3DCOLOR_XRGB(163, 73, 164));
+	sprite = new Sprite(graphic, pathpng, colors);
 	for (int i = 0; i < tileCount; i++)
 	{
 

@@ -10,7 +10,9 @@ SpendThese::SpendThese(Sprite* spSpendThese, SpriteSheet* info, D3DXVECTOR2 pos,
 	this->spendTheseAnim = new Animation(info);
 	transform = D3DXVECTOR2(0, 0);
 	position = pos;
-
+	this->sound = new Sound(Graphic::getInstance()->GetHwnd());
+	this->sound->Init_DirectSound();
+	this->spensound = this->sound->LoadSound("./Sound/Apple Slice.wav");
 	SetBound(10, 10);
 	allowDraw = true;
 	flipFlag = false;
@@ -32,32 +34,22 @@ void SpendThese::ChangeAnimation(Keyboard* key) {
 
 void SpendThese::Update(float dt, Keyboard* key) {
 
-	D3DXVECTOR2 posAla = aladdin->GetPosition();
-	if (abs(aladdin->GetPosition().x - position.x) < 10 && abs(aladdin->GetPosition().x - position.x) > 5) {
-		this->state = SpendTheseState::Destroy;
-
-	}
-	else {
-		this->state = SpendTheseState::Show;
-	}
-
-	if (timeout >= 0.2f) {
-		//this->state = SpendTheseState::Show;
-
-		timeout = 0.0;
-	}
-
-	timeout += dt;
 	ChangeAnimation(key);
 	Object::Update(dt, key);
 	spendTheseAnim->Update(dt, key);
 }
-void SpendThese::OnCollision(Object* obj, D3DXVECTOR2 distance, D3DXVECTOR2 disSpendThese) {
+void SpendThese::OnCollision(Object* obj, D3DXVECTOR2 distance) {
+	if (Collision::isCollision(this->GetBound(), aladdin->GetBound2())) {
+		this->SetAllowDraw(false);
+		sound->PlaySoundA(spensound);
+		aladdin->numspend++;
+	
+	}
 }
 void SpendThese::Render(Viewport* viewport) {
-	if (viewport->isContains(this->GetBound())) {
-		this->allowDraw = true;
-
+	/*if (viewport->isContains(this->GetBound())) {
+		this->allowDraw = true;*/
+	if (this->GetAllowDraw()) {
 		this->sprite->SetData(
 			spendTheseAnim->GetRect(),
 			spendTheseAnim->GetCenter(),
@@ -69,10 +61,12 @@ void SpendThese::Render(Viewport* viewport) {
 		this->sprite->SetScale(D3DXVECTOR2(1.0f, 1.0f));
 		this->sprite->Render(viewport);
 	}
+
+	/*}
 	else {
 		this->allowDraw = false;
 		spendTheseAnim->SetIndex(0);
-	}
+	}*/
 }
 void SpendThese::SetAllowDraw(bool allow) {
 	this->allowDraw = allow;

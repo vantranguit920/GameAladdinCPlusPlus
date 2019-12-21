@@ -6,14 +6,15 @@
 #include "Aladdin.h"
 #include "SpriteSheet.h"
 #include "Keyboard.h"
-
+#include "Sound.h"
 class  BonusLevel :public Object
 {
 protected:
 	Animation* BonusLevelAnim;
 	Aladdin* aladdin;
 	Viewport* viewport;
-
+	Sound *sound;
+	GSound *bonusSound;
 	float timeout = 0.0f;
 public:
 	BonusLevel();
@@ -28,7 +29,7 @@ public:
 	BonusLevelState state;
 	void ChangeAnimation(Keyboard* key);
 
-	void OnCollision(Object* obj, D3DXVECTOR2 distance, D3DXVECTOR2 disBonusLevel);
+	void OnCollision(Object* obj, D3DXVECTOR2 distance);
 
 	void Update(float dt, Keyboard* key);
 	void Render(Viewport* viewport);

@@ -10,22 +10,21 @@ Apple::Apple(Sprite* spApple, SpriteSheet* info, D3DXVECTOR2 pos, Aladdin* aladd
 	this->AppleAnim = new Animation(info);
 	transform = D3DXVECTOR2(0, 0);
 	position = pos;
-
 	SetBound(10, 10);
 	allowDraw = true;
 	flipFlag = false;
 	this->state = AppleState::Show;
+	this->sound = new Sound(Graphic::getInstance()->GetHwnd());
+	this->sound->Init_DirectSound();
+	this->applesound = this->sound->LoadSound("./Sound/Apple Slice.wav");
 
 }
 
 
 void Apple::ChangeAnimation(Keyboard* key) {
 	switch (this->state) {
-	case AppleState::Hitted:
-		//AppleAnim->SetFrame(position, flipFlag, 20, 4, 17, false);
-		break;
 	case AppleState::Show:
-		AppleAnim->SetFrame(position, flipFlag, 20, 0, 1, true);
+		AppleAnim->SetFrame(position, flipFlag, 20, 0, 0, true);
 		break;
 
 	}
@@ -46,12 +45,23 @@ void Apple::Update(float dt, Keyboard* key) {
 	Object::Update(dt, key);
 	AppleAnim->Update(dt, key);
 }
-void Apple::OnCollision(Object* obj, D3DXVECTOR2 distance, D3DXVECTOR2 disApple) {
+void Apple::OnCollision(Object* obj, D3DXVECTOR2 distance) {
+
+	if (Collision::isCollision(this->GetBound(), aladdin->GetBound2())) {
+		this->SetAllowDraw(false);
+		sound->PlaySoundA(applesound);
+		if(aladdin->numapples<99)
+			aladdin->numapples++;
+	}
+
+
+	
 }
 void Apple::Render(Viewport* viewport) {
-	if (viewport->isContains(this->GetBound())) {
+	/*if (viewport->isContains(this->GetBound())) {
 		this->allowDraw = true;
-
+*/
+	if (this->GetAllowDraw()) {
 		this->sprite->SetData(
 			AppleAnim->GetRect(),
 			AppleAnim->GetCenter(),
@@ -60,17 +70,18 @@ void Apple::Render(Viewport* viewport) {
 			AppleAnim->GetTransform(),
 			AppleAnim->GetAngle());
 
-		this->sprite->SetScale(D3DXVECTOR2(1.0f, 1.0f));
+		this->sprite->SetScale(D3DXVECTOR2(0.7f, 0.7f));
 		this->sprite->Render(viewport);
 	}
+		
+	/*}
 	else {
 		this->allowDraw = false;
 		AppleAnim->SetIndex(0);
-	}
+	}*/
 }
 void Apple::SetAllowDraw(bool allow) {
 	this->allowDraw = allow;
-	AppleAnim->SetIndex(0);
 }
 
 bool Apple::GetAllowDraw() {

@@ -61,21 +61,6 @@
     <ClCompile Include="MapObjectGroup.cpp">
       <Filter>Map</Filter>
     </ClCompile>
-    <ClCompile Include="Arrow.cpp">
-      <Filter>Map</Filter>
-    </ClCompile>
-    <ClCompile Include="Brick.cpp">
-      <Filter>Map</Filter>
-    </ClCompile>
-    <ClCompile Include="Bat.cpp">
-      <Filter>Map</Filter>
-    </ClCompile>
-    <ClCompile Include="pendulum.cpp">
-      <Filter>Map</Filter>
-    </ClCompile>
-    <ClCompile Include="PointMap.cpp">
-      <Filter>Map</Filter>
-    </ClCompile>
     <ClCompile Include="dsutil.cpp">
       <Filter>SoundLib</Filter>
     </ClCompile>
@@ -106,29 +91,80 @@
     <ClCompile Include="Stage.cpp">
       <Filter>Stage</Filter>
     </ClCompile>
-    <ClCompile Include="Guard.cpp">
-      <Filter>Map</Filter>
-    </ClCompile>
-    <ClCompile Include="Skeleton.cpp">
-      <Filter>Map</Filter>
-    </ClCompile>
-    <ClCompile Include="RodGuard.cpp">
-      <Filter>Map</Filter>
-    </ClCompile>
-    <ClCompile Include="Shop.cpp">
-      <Filter>Map</Filter>
-    </ClCompile>
     <ClCompile Include="Apple.cpp">
-      <Filter>Map</Filter>
+      <Filter>Map\Mapitem</Filter>
+    </ClCompile>
+    <ClCompile Include="AppleThrow.cpp">
+      <Filter>Map\Mapitem</Filter>
+    </ClCompile>
+    <ClCompile Include="Arrow.cpp">
+      <Filter>Map\Mapitem</Filter>
+    </ClCompile>
+    <ClCompile Include="Bat.cpp">
+      <Filter>Map\Enemy</Filter>
     </ClCompile>
     <ClCompile Include="BonusLevel.cpp">
-      <Filter>Map</Filter>
+      <Filter>Map\Mapitem</Filter>
     </ClCompile>
-    <ClCompile Include="SavePosition.cpp">
-      <Filter>Map</Filter>
+    <ClCompile Include="Brick.cpp">
+      <Filter>Map\Mapitem</Filter>
+    </ClCompile>
+    <ClCompile Include="Collapse.cpp">
+      <Filter>Map\Mapitem</Filter>
+    </ClCompile>
+    <ClCompile Include="Guard.cpp">
+      <Filter>Map\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="HeadAla.cpp">
+      <Filter>Map\Mapitem</Filter>
+    </ClCompile>
+    <ClCompile Include="itemApple.cpp">
+      <Filter>Map\Mapitem</Filter>
+    </ClCompile>
+    <ClCompile Include="itemspend.cpp">
+      <Filter>Map\Mapitem</Filter>
+    </ClCompile>
+    <ClCompile Include="Lamp.cpp">
+      <Filter>Map\Mapitem</Filter>
+    </ClCompile>
+    <ClCompile Include="pendulum.cpp">
+      <Filter>Map\Mapitem</Filter>
+    </ClCompile>
+    <ClCompile Include="RodGuard.cpp">
+      <Filter>Map\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Skeleton.cpp">
+      <Filter>Map\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Shop.cpp">
+      <Filter>Map\Enemy</Filter>
     </ClCompile>
     <ClCompile Include="SpendThese.cpp">
+      <Filter>Map\Mapitem</Filter>
+    </ClCompile>
+    <ClCompile Include="Score.cpp">
+      <Filter>Map\Mapitem</Filter>
+    </ClCompile>
+    <ClCompile Include="SavePosition.cpp">
+      <Filter>Map\Mapitem</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBoss.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="PointMap.cpp">
       <Filter>Map</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss.cpp">
+      <Filter>Map\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Fire.cpp">
+      <Filter>Map\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Star.cpp">
+      <Filter>Map\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuGame.cpp">
+      <Filter>Scene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -186,18 +222,6 @@
     <ClInclude Include="MapObjectGroup.h">
       <Filter>Map</Filter>
     </ClInclude>
-    <ClInclude Include="Arrow.h">
-      <Filter>Map</Filter>
-    </ClInclude>
-    <ClInclude Include="Brick.h">
-      <Filter>Map</Filter>
-    </ClInclude>
-    <ClInclude Include="Bat.h">
-      <Filter>Map</Filter>
-    </ClInclude>
-    <ClInclude Include="pendulum.h">
-      <Filter>Map</Filter>
-    </ClInclude>
     <ClInclude Include="PointMap.h">
       <Filter>Map</Filter>
     </ClInclude>
@@ -234,29 +258,77 @@
     <ClInclude Include="Stage.h">
       <Filter>Stage</Filter>
     </ClInclude>
-    <ClInclude Include="Guard.h">
-      <Filter>Map</Filter>
-    </ClInclude>
-    <ClInclude Include="Skeleton.h">
-      <Filter>Map</Filter>
-    </ClInclude>
-    <ClInclude Include="RodGuard.h">
-      <Filter>Map</Filter>
-    </ClInclude>
-    <ClInclude Include="Shop.h">
-      <Filter>Map</Filter>
-    </ClInclude>
     <ClInclude Include="Apple.h">
-      <Filter>Map</Filter>
+      <Filter>Map\Mapitem</Filter>
+    </ClInclude>
+    <ClInclude Include="AppleThrow.h">
+      <Filter>Map\Mapitem</Filter>
+    </ClInclude>
+    <ClInclude Include="Arrow.h">
+      <Filter>Map\Mapitem</Filter>
+    </ClInclude>
+    <ClInclude Include="Bat.h">
+      <Filter>Map\Enemy</Filter>
     </ClInclude>
     <ClInclude Include="BonusLevel.h">
-      <Filter>Map</Filter>
+      <Filter>Map\Mapitem</Filter>
     </ClInclude>
-    <ClInclude Include="SavePosition.h">
-      <Filter>Map</Filter>
+    <ClInclude Include="Brick.h">
+      <Filter>Map\Mapitem</Filter>
+    </ClInclude>
+    <ClInclude Include="Collapse.h">
+      <Filter>Map\Mapitem</Filter>
+    </ClInclude>
+    <ClInclude Include="Guard.h">
+      <Filter>Map\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="HeadAla.h">
+      <Filter>Map\Mapitem</Filter>
+    </ClInclude>
+    <ClInclude Include="itemApple.h">
+      <Filter>Map\Mapitem</Filter>
+    </ClInclude>
+    <ClInclude Include="itemspend.h">
+      <Filter>Map\Mapitem</Filter>
+    </ClInclude>
+    <ClInclude Include="Lamp.h">
+      <Filter>Map\Mapitem</Filter>
+    </ClInclude>
+    <ClInclude Include="pendulum.h">
+      <Filter>Map\Mapitem</Filter>
+    </ClInclude>
+    <ClInclude Include="RodGuard.h">
+      <Filter>Map\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Skeleton.h">
+      <Filter>Map\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Shop.h">
+      <Filter>Map\Enemy</Filter>
     </ClInclude>
     <ClInclude Include="SpendThese.h">
-      <Filter>Map</Filter>
+      <Filter>Map\Mapitem</Filter>
+    </ClInclude>
+    <ClInclude Include="Score.h">
+      <Filter>Map\Mapitem</Filter>
+    </ClInclude>
+    <ClInclude Include="SavePosition.h">
+      <Filter>Map\Mapitem</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBoss.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss.h">
+      <Filter>Map\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Fire.h">
+      <Filter>Map\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Star.h">
+      <Filter>Map\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuGame.h">
+      <Filter>Scene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -283,6 +355,12 @@
     </Filter>
     <Filter Include="Stage">
       <UniqueIdentifier>{9d2024ca-a422-4560-9d78-2ca545076eb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map\Enemy">
+      <UniqueIdentifier>{8d45f88c-3d87-4b56-952e-e266907ebdb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Map\Mapitem">
+      <UniqueIdentifier>{620c065f-8db9-4a12-96cc-aa9d701b5890}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

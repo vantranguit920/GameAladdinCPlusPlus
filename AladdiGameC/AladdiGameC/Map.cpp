@@ -9,10 +9,10 @@ Map::Map()
 {
 }
 
-Map::Map(Graphic* graphic, const char* pathMapxml, const char* pathMap)
+Map::Map(Graphic* graphic, const char* pathMapxml, const char* pathMap, D3DCOLOR colors)
 {
 	pahtMapPNG = (char*)pathMap;
-	ReadXML(graphic, pathMapxml);
+	ReadXML(graphic, pathMapxml, colors);
 	position = D3DXVECTOR2(0, 0);
 	
 	//RECT r;
@@ -39,7 +39,7 @@ Map::~Map()
 	delete tileSet;
 }
 
-void Map::ReadXML(Graphic* graphic, const char *path)
+void Map::ReadXML(Graphic* graphic, const char *path, D3DCOLOR colors)
 {
 	TiXmlDocument doc(path);
 	if (!doc.LoadFile())
@@ -56,7 +56,7 @@ void Map::ReadXML(Graphic* graphic, const char *path)
 
 	//tileset
 	TiXmlElement* tileset = map->FirstChildElement();
-	tileSet = new TileSet(graphic, tileset, pahtMapPNG);
+	tileSet = new TileSet(graphic, tileset, pahtMapPNG, colors);
 
 	//layer
 	TiXmlElement* layer = tileset->NextSiblingElement();

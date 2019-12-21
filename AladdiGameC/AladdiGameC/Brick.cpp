@@ -63,9 +63,9 @@ void Brick::setstate(BrickState state) {
 
 void Brick::Render(Viewport* viewport) {
 
-	if (viewport->isContains(this->GetBound())) {
+	/*if (viewport->isContains(this->GetBound())) {
 		this->allowDraw = true;
-		
+		*/
 		this->sprite->SetData(Brickanim->GetRect(),
 			Brickanim->GetCenter(),
 			Brickanim->GetPosition(),
@@ -74,11 +74,11 @@ void Brick::Render(Viewport* viewport) {
 			Brickanim->GetAngle());
 		this->sprite->SetScale(D3DXVECTOR2(1.0f, 1.0f));
 		this->sprite->Render(viewport);
-	}
+	/*}
 	else {
 		this->allowDraw = false;
 		Brickanim->SetIndex(0);
-	}
+	}*/
 
 	
 }

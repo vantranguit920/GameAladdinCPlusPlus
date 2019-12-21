@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Animations>
+<Animation imagePath="BatupdateII.png" width="239" height="137">
+    <sprite n="31.png" x="1" y="1" w="73" h="47" pX="0.493151" pY="0.659574"/>
+    <sprite n="32.png" x="76" y="1" w="78" h="49" pX="0.5" pY="0.632653"/>
+    <sprite n="33.png" x="156" y="1" w="82" h="51" pX="0.52439" pY="0.666667"/>
+    <sprite n="34.png" x="1" y="54" w="91" h="55" pX="0.483516" pY="0.690909"/>
+    <sprite n="35.png" x="94" y="54" w="79" h="55" pX="0.468354" pY="0.6"/>
+    <sprite n="36.png" x="175" y="54" w="42" h="37" pX="0.5" pY="0.5"/>
+    <sprite n="Bat_01.png" x="219" y="54" w="7" h="16" pX="0.5" pY="0.5"/>
+    <sprite n="Bat_04.png" x="1" y="111" w="21" h="14" pX="0.52381" pY="0.714286"/>
+    <sprite n="Bat_06.png" x="24" y="111" w="24" h="15" pX="0.5" pY="0.8"/>
+    <sprite n="Bat_07.png" x="50" y="111" w="13" h="23" pX="0.538462" pY="0.826087"/>
+    <sprite n="Bat_08.png" x="65" y="111" w="30" h="17" pX="0.5" pY="0.764706"/>
+    <sprite n="Bat_09.png" x="97" y="111" w="32" h="16" pX="0.53125" pY="0.3125"/>
+    <sprite n="Bat_10.png" x="131" y="111" w="8" h="25" pX="0.5" pY="0.16"/>
+    <sprite n="Bat_11.png" x="141" y="111" w="20" h="16" pX="0.5" pY="0.3125"/>
+    <sprite n="Bat_12.png" x="163" y="111" w="34" h="14" pX="0.529412" pY="0.714286"/>
+</Animation>
+</Animations>

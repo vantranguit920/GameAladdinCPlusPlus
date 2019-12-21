@@ -21,6 +21,10 @@
 #include "SavePosition.h"
 #include "BonusLevel.h"
 #include "Apple.h"
+#include "Lamp.h"
+#include "HeadAla.h"
+#include "itemApple.h"
+#include "itemspend.h"
 class ObjectManager
 {
 protected:
@@ -34,8 +38,8 @@ protected:
 
 	PointMap* point;
 
-	Sound *sound;
-	GSound *soundGame;
+	
+	
 	vector <Object*> listObjectCollison;
 	vector <Object*> listGround;
 	vector <Object*> listWall2;
@@ -52,7 +56,13 @@ protected:
 	Sprite *spriteAladdin;
 	SpriteSheet *infoAlddin;
 
-	
+	Lamp* lamp;
+	HeadAla *head;
+	itemApple* itemapple;
+	itemspend* itemspends;
+	Sprite *spriteLamp;
+	SpriteSheet *infoLamp;
+
 	Sprite *spriteBrick;
 	SpriteSheet *infoBrick;
 
@@ -70,7 +80,7 @@ protected:
 	Sprite* spriteSavePosition;
 	SpriteSheet* infoSavePosition;
 
-	BonusLevel* bonusLevel;
+	
 	Sprite* spriteBonusLevel;
 	SpriteSheet* infoBonusLevel;
 
@@ -100,14 +110,15 @@ protected:
 	std::unordered_set<Object*> objects;
 
 public:
+	Sound *sound;
+	GSound *soundGame;
 	ObjectManager();
 	~ObjectManager();
-	void Init(Graphic* graphic, Sound* sound);
+	void Init(Graphic* graphic);
 	//Update Game sau khoảng thời gian dt
 	void Update(float dt, Keyboard* key);
+	Aladdin* getAladdin();
 	//Vẽ Object lên màn hình 
 	void Render();
-	void Start();
-	int End();
 	void ReadGrid(TiXmlElement *root,Grid *grid);	
 };

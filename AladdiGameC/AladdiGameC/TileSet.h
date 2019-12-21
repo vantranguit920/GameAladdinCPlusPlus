@@ -17,7 +17,7 @@ protected:
 
 public:
 	TileSet();
-	TileSet(Graphic* graphic, TiXmlElement *node, const char* pathpng);
+	TileSet(Graphic* graphic, TiXmlElement *node, const char* pathpng, D3DCOLOR colors);
 	~TileSet();
 	void setScale(D3DXVECTOR2 scale);
 	void ReadXML(TiXmlElement *node);

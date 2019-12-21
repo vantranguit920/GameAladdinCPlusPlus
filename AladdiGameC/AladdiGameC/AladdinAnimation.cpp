@@ -40,8 +40,8 @@ void AladdinAnimation::attackAnimation() {
 }
 void AladdinAnimation::throwAnimation() {
 	repeat = true;
-	delay = 20;
-	start = 43; end = 48;
+	delay = 7;
+	start = 39; end = 44;
 }
 void AladdinAnimation::crouchIdelAnimation() {
 	repeat = true;
@@ -65,13 +65,13 @@ void AladdinAnimation::runfallAnimation() {
 }
 void AladdinAnimation::jumpthrowAnimation() {
 	repeat = true;
-	delay = 20;
-	start = 70; end = 74;
+	delay = 7;
+	start = 112; end = 116;
 }
 void AladdinAnimation::jumpAttackAnimation() {
 	repeat = true;
-	delay = 20;
-	start = 75; end = 80;
+	delay = 5;
+	start = 118; end = 122;
 }
 void AladdinAnimation::springAnimation() {
 	repeat = true;
@@ -103,6 +103,12 @@ void AladdinAnimation::climbVerticalJumpAnimation() {
 	delay = 20;
 	start = 133; end = 137;
 }
+void AladdinAnimation::VerticalJumpAnimation()
+{
+	repeat = true;
+	delay = 5;
+	start = 82; end = 87;
+}
 void AladdinAnimation::climbVerticalFallAnimation() {
 	repeat = true;
 	delay = 20;
@@ -122,6 +128,66 @@ void AladdinAnimation::upAnimation() {
 	repeat = true;
 	delay = 20;
 	start = 161; end = 162;
+}
+void AladdinAnimation::downAnimation()
+{
+	repeat = false;
+	delay = 10;
+	start = 66; end = 68;
+}
+void AladdinAnimation::downThrow()
+{
+	repeat = true;
+	delay = 10;
+	start = 69; end = 73;
+}
+void AladdinAnimation::swingAnim()
+{
+	repeat = false;
+	delay = 10;
+	start = 153; end = 153;
+}
+void AladdinAnimation::swingjump()
+{
+	repeat = false;
+	delay = 10;
+	start = 190; end = 198;
+}
+void AladdinAnimation::swingGoAnim()
+{
+	repeat = true;
+	delay = 10;
+	start = 153; end = 162;
+}
+void AladdinAnimation::swingAttack()
+{
+	repeat = true;
+	delay = 5;
+	start = 183; end = 189;
+}
+void AladdinAnimation::swingThrow()
+{
+	repeat = true;
+	delay = 7;
+	start = 176; end = 182;
+}
+void AladdinAnimation::bleddbyboss()
+{
+	repeat = true;
+	delay = 10;
+	start = -1; end = 1;
+}
+void AladdinAnimation::swingGodown()
+{
+	repeat = true;
+	delay = 10;
+	start = 288; end = 296;
+}
+void AladdinAnimation::dowmAttackAnim()
+{
+	repeat = true;
+	delay = 7;
+	start = 74; end = 80;
 }
 void AladdinAnimation::climbthrowAnimation() {
 	repeat = true;

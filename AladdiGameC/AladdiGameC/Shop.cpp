@@ -51,8 +51,8 @@ void Shop::Update(float dt, Keyboard* key) {
 void Shop::OnCollision(Object* obj, D3DXVECTOR2 distance, D3DXVECTOR2 disShop) {
 }
 void Shop::Render(Viewport* viewport) {
-	if (viewport->isContains(this->GetBound())) {
-		this->allowDraw = true;
+	/*if (viewport->isContains(this->GetBound())) {
+		this->allowDraw = true;*/
 
 		this->sprite->SetData(
 			ShopAnim->GetRect(),
@@ -64,11 +64,11 @@ void Shop::Render(Viewport* viewport) {
 
 		this->sprite->SetScale(D3DXVECTOR2(1.0f, 1.0f));
 		this->sprite->Render(viewport);
-	}
+	/*}
 	else {
 		this->allowDraw = false;
 		ShopAnim->SetIndex(0);
-	}
+	}*/
 }
 void Shop::SetAllowDraw(bool allow) {
 	this->allowDraw = allow;

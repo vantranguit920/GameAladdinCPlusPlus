@@ -9,11 +9,11 @@ Map3D::Map3D()
 {
 }
 
-Map3D::Map3D(Graphic* graphic, const char* pathMapxml, const char* pathMap)
+Map3D::Map3D(Graphic* graphic, const char* pathMapxml, const char* pathMap, D3DCOLOR colors)
 {
 
 	pahtMapPNG = (char*)pathMap;
-	ReadXML(graphic, pathMapxml);
+	ReadXML(graphic, pathMapxml, colors);
 	position = D3DXVECTOR2(0, 0);
 
 	RECT r;
@@ -58,7 +58,7 @@ Map3D::~Map3D()
 	delete tileSet;
 }
 
-void Map3D::ReadXML(Graphic* graphic, const char *path)
+void Map3D::ReadXML(Graphic* graphic, const char *path, D3DCOLOR colors)
 {
 	TiXmlDocument doc(path);
 	if (!doc.LoadFile())
@@ -75,7 +75,7 @@ void Map3D::ReadXML(Graphic* graphic, const char *path)
 
 	//tileset
 	TiXmlElement* tileset = map->FirstChildElement();
-	tileSet = new TileSet(graphic, tileset, pahtMapPNG);
+	tileSet = new TileSet(graphic, tileset, pahtMapPNG, colors);
 
 	//layer
 	TiXmlElement* layer = tileset->NextSiblingElement();
@@ -132,11 +132,6 @@ void Map3D::SetData(D3DXVECTOR2 position, int data)
 
 void Map3D::Render(Viewport * viewport, D3DXVECTOR2 prepos, D3DXVECTOR2 newpos)
 {
-
-
-
-
-
 	int startH, startW, endH, endW;
 	RECT r = viewport->GetBound();
 
@@ -144,9 +139,9 @@ void Map3D::Render(Viewport * viewport, D3DXVECTOR2 prepos, D3DXVECTOR2 newpos)
 	int deltaY = (newpos.y - prepos.y) / 32;
 
 	startH = r.bottom / tileHeight;
-	endH = r.top / tileHeight + 1;
+	endH = r.top / tileHeight + 2;
 	startW = r.left / tileWidth;
-	endW = r.right / tileWidth + 1;
+	endW = r.right / tileWidth + 2;
 	
 
 	for (int h = (startH + deltaY ); h < (endH + deltaY); h++) {

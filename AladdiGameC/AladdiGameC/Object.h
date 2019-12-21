@@ -2,7 +2,7 @@
 #include "Sprite.h"
 #include "Collision.h"
 #include "Sound.h"
-
+#include "Animation.h"
 class Object 
 {
 protected:
@@ -25,6 +25,7 @@ protected:
 
 public:
 	int id;
+	Animation* anim;
 	enum Tag
 	{
 		Player,
@@ -36,6 +37,7 @@ public:
 		Port,
 		Elevator,
 		Stage,
+		Rope,
 		None
 	};
 	Tag tag;

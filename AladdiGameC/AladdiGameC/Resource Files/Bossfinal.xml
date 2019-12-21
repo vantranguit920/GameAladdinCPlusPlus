@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Animations>
+  <Animation imagePath="Bossfinal.png" width="254" height="669">
+    <sprite n="0.png" x="1" y="1" w="64" h="71" pX="0.5" pY="1"/>
+    <sprite n="1.png" x="67" y="1" w="57" h="70" pX="0.5" pY="1"/>
+    <sprite n="2.png" x="126" y="1" w="55" h="69" pX="0.5" pY="1"/>
+    <sprite n="3.png" x="183" y="1" w="51" h="68" pX="0.5" pY="1"/>
+    <sprite n="4.png" x="1" y="74" w="64" h="69" pX="0.40625" pY="1"/>
+    <sprite n="5.png" x="67" y="74" w="82" h="69" pX="0.292683" pY="1"/>
+    <sprite n="6.png" x="151" y="74" w="85" h="69" pX="0.317647" pY="1"/>
+    <sprite n="7.png" x="1" y="145" w="68" h="69" pX="0.352941" pY="1"/>
+    <sprite n="8.png" x="71" y="145" w="70" h="58" pX="0.371429" pY="1"/>
+    <sprite n="9.png" x="143" y="145" w="64" h="64" pX="0.59375" pY="1"/>
+    <sprite n="10.png" x="1" y="216" w="67" h="72" pX="0.776119" pY="1"/>
+    <sprite n="11.png" x="70" y="216" w="71" h="72" pX="0.774648" pY="1"/>
+    <sprite n="12.png" x="143" y="216" w="69" h="84" pX="0.797101" pY="1"/>
+    <sprite n="13.png" x="1" y="302" w="69" h="83" pX="0.797101" pY="1"/>
+    <sprite n="14.png" x="72" y="302" w="70" h="82" pX="0.8" pY="1"/>
+    <sprite n="15.png" x="144" y="302" w="70" h="82" pX="0.771429" pY="1"/>
+    <sprite n="16.png" x="1" y="387" w="64" h="84" pX="0.796875" pY="1"/>
+    <sprite n="17.png" x="67" y="387" w="64" h="82" pX="0.5" pY="1"/>
+    <sprite n="18.png" x="133" y="387" w="71" h="61" pX="0.28169" pY="1"/>
+    <sprite n="19.png" x="206" y="387" w="24" h="47" pX="0.416667" pY="0.978723"/>
+    <sprite n="20.png" x="1" y="473" w="22" h="46" pX="0.454545" pY="0.978261"/>
+    <sprite n="21.png" x="25" y="473" w="24" h="47" pX="0.458333" pY="0.978723"/>
+    <sprite n="22.png" x="51" y="473" w="25" h="48" pX="0.44" pY="0.979167"/>
+    <sprite n="23.png" x="78" y="473" w="35" h="46" pX="0.571429" pY="0.978261"/>
+    <sprite n="24.png" x="115" y="473" w="28" h="14" pX="0.5" pY="0.5"/>
+    <sprite n="25.png" x="145" y="473" w="24" h="16" pX="0.5" pY="0.5625"/>
+    <sprite n="26.png" x="171" y="473" w="26" h="15" pX="0.5" pY="0.533333"/>
+    <sprite n="27.png" x="199" y="473" w="10" h="10" pX="0.5" pY="1"/>
+    <sprite n="28.png" x="211" y="473" w="15" h="7" pX="0.5" pY="1"/>
+    <sprite n="29.png" x="228" y="473" w="15" h="21" pX="0.533333" pY="0.571429"/>
+    <sprite n="30.png" x="1" y="523" w="75" h="50" pX="0.5" pY="1"/>
+    <sprite n="31.png" x="78" y="523" w="79" h="44" pX="0.5" pY="1"/>
+    <sprite n="32.png" x="159" y="523" w="94" h="42" pX="0.5" pY="1"/>
+    <sprite n="33.png" x="1" y="575" w="90" h="40" pX="0.5" pY="1"/>
+    <sprite n="34.png" x="93" y="575" w="77" h="29" pX="0.5" pY="1"/>
+    <sprite n="35.png" x="172" y="575" w="73" h="31" pX="0.5" pY="1"/>
+    <sprite n="36.png" x="1" y="617" w="60" h="43" pX="0.5" pY="1"/>
+    <sprite n="37.png" x="63" y="617" w="64" h="51" pX="0.5" pY="1"/>
+  </Animation>
+</Animations>

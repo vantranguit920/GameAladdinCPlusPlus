@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Animations>
+  <Animation imagePath="GoguardII.png" width="228" height="361">
+    <sprite n="0.png" x="176" y="286" w="37" h="74" pX="0.486486" pY="1"/>
+    <sprite n="1.png" x="1" y="222" w="49" h="60" pX="0.510204" pY="1"/>
+    <sprite n="2.png" x="1" y="161" w="92" h="58" pX="0.163043" pY="0.982759"/>
+    <sprite n="3.png" x="141" y="161" w="86" h="59" pX="0.209302" pY="1"/>
+    <sprite n="4.png" x="95" y="222" w="77" h="60" pX="0.246753" pY="1"/>
+    <sprite n="5.png" x="52" y="222" w="41" h="60" pX="0.439024" pY="1"/>
+
+    <sprite n="0.png" x="176" y="286" w="37" h="74" pX="0.486486" pY="1"/>
+    <sprite n="1.png" x="1" y="222" w="49" h="60" pX="0.510204" pY="1"/>
+    <sprite n="2.png" x="1" y="161" w="92" h="58" pX="0.163043" pY="0.982759"/>
+    <sprite n="3.png" x="141" y="161" w="86" h="59" pX="0.209302" pY="1"/>
+    <sprite n="4.png" x="95" y="222" w="77" h="60" pX="0.246753" pY="1"/>
+    <sprite n="5.png" x="52" y="222" w="41" h="60" pX="0.439024" pY="1"/>
+
+    <sprite n="6.png" x="95" y="161" w="44" h="58" pX="0.5" pY="1"/>
+    <sprite n="7.png" x="120" y="1" w="40" h="48" pX="0.5" pY="1"/>
+    <sprite n="8.png" x="135" y="286" w="39" h="73" pX="0.5" pY="1"/>
+    <sprite n="9.png" x="48" y="286" w="41" h="68" pX="0.5" pY="1"/>
+    <sprite n="10.png" x="174" y="222" w="46" h="62" pX="0.5" pY="1"/>
+    <sprite n="11.png" x="91" y="286" w="42" h="71" pX="0.5" pY="1"/>
+    <sprite n="12.png" x="81" y="51" w="47" h="49" pX="0.5" pY="1"/>
+    <sprite n="13.png" x="120" y="1" w="40" h="48" pX="0.5" pY="1"/>
+    <sprite n="14.png" x="1" y="286" w="45" h="67" pX="0.5" pY="1"/>
+    <sprite n="31.png" x="45" y="1" w="73" h="47" pX="0.465753" pY="0.93617"/>
+    <sprite n="32.png" x="1" y="51" w="78" h="49" pX="0.461538" pY="0.979592"/>
+    <sprite n="33.png" x="130" y="51" w="82" h="51" pX="0.487805" pY="1"/>
+    <sprite n="34.png" x="1" y="104" w="91" h="55" pX="0.494505" pY="0.963636"/>
+    <sprite n="35.png" x="94" y="104" w="79" h="55" pX="0.417722" pY="0.927273"/>
+    <sprite n="36.png" x="1" y="1" w="42" h="37" pX="0.52381" pY="0.837838"/>
+  </Animation>
+</Animations>

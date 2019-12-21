@@ -6,6 +6,7 @@
 #include "Aladdin.h"
 #include "SpriteSheet.h"
 #include "Keyboard.h"
+#include "Sound.h"
 
 class  Apple :public Object
 {
@@ -13,7 +14,8 @@ protected:
 	Animation* AppleAnim;
 	Aladdin* aladdin;
 	Viewport* viewport;
-
+	Sound *sound;
+	GSound *applesound;
 	float timeout = 0.0f;
 public:
 	Apple();
@@ -22,13 +24,12 @@ public:
 
 	enum AppleState {
 		Show,
-		Hitted,
 	};
 
 	AppleState state;
 	void ChangeAnimation(Keyboard* key);
 
-	void OnCollision(Object* obj, D3DXVECTOR2 distance, D3DXVECTOR2 disApple);
+	void OnCollision(Object* obj, D3DXVECTOR2 distance);
 
 	void Update(float dt, Keyboard* key);
 	void Render(Viewport* viewport);

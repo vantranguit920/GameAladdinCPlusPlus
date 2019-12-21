@@ -22,13 +22,13 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{0E9DBCF4-3E0B-4166-9CFB-F95ED615BE90}</ProjectGuid>
     <RootNamespace>AladdiGameC</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -122,22 +122,31 @@
     <ClCompile Include="AladinState.cpp" />
     <ClCompile Include="Animation.cpp" />
     <ClCompile Include="Apple.cpp" />
+    <ClCompile Include="AppleThrow.cpp" />
     <ClCompile Include="Arrow.cpp" />
     <ClCompile Include="Bat.cpp" />
     <ClCompile Include="BonusLevel.cpp" />
+    <ClCompile Include="Boss.cpp" />
     <ClCompile Include="Brick.cpp" />
     <ClCompile Include="Cell.cpp" />
+    <ClCompile Include="Collapse.cpp" />
     <ClCompile Include="Collision.cpp" />
     <ClCompile Include="dsutil.cpp" />
+    <ClCompile Include="Fire.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Graphic.cpp" />
     <ClCompile Include="Grid.cpp" />
     <ClCompile Include="Guard.cpp" />
+    <ClCompile Include="HeadAla.cpp" />
+    <ClCompile Include="itemApple.cpp" />
+    <ClCompile Include="itemspend.cpp" />
     <ClCompile Include="Keyboard.cpp" />
+    <ClCompile Include="Lamp.cpp" />
     <ClCompile Include="Map.cpp" />
     <ClCompile Include="Map3D.cpp" />
     <ClCompile Include="MapObject.cpp" />
     <ClCompile Include="MapObjectGroup.cpp" />
+    <ClCompile Include="MenuGame.cpp" />
     <ClCompile Include="Object.cpp" />
     <ClCompile Include="ObjectManager.cpp" />
     <ClCompile Include="pendulum.cpp" />
@@ -145,6 +154,8 @@
     <ClCompile Include="RodGuard.cpp" />
     <ClCompile Include="SavePosition.cpp" />
     <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneBoss.cpp" />
+    <ClCompile Include="Score.cpp" />
     <ClCompile Include="Shop.cpp" />
     <ClCompile Include="Skeleton.cpp" />
     <ClCompile Include="Sound.cpp" />
@@ -152,6 +163,7 @@
     <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="SpriteSheet.cpp" />
     <ClCompile Include="Stage.cpp" />
+    <ClCompile Include="Star.cpp" />
     <ClCompile Include="Text.cpp" />
     <ClCompile Include="TileSet.cpp" />
     <ClCompile Include="TinyXML\tinystr.cpp" />
@@ -167,24 +179,33 @@
     <ClInclude Include="AladinState.h" />
     <ClInclude Include="Animation.h" />
     <ClInclude Include="Apple.h" />
+    <ClInclude Include="AppleThrow.h" />
     <ClInclude Include="Arrow.h" />
     <ClInclude Include="Bat.h" />
     <ClInclude Include="BonusLevel.h" />
+    <ClInclude Include="Boss.h" />
     <ClInclude Include="Brick.h" />
     <ClInclude Include="Cell.h" />
+    <ClInclude Include="Collapse.h" />
     <ClInclude Include="Collision.h" />
     <ClInclude Include="Define.h" />
     <ClInclude Include="dsutil.h" />
     <ClInclude Include="dxutil.h" />
+    <ClInclude Include="Fire.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Graphic.h" />
     <ClInclude Include="Grid.h" />
     <ClInclude Include="Guard.h" />
+    <ClInclude Include="HeadAla.h" />
+    <ClInclude Include="itemApple.h" />
+    <ClInclude Include="itemspend.h" />
     <ClInclude Include="Keyboard.h" />
+    <ClInclude Include="Lamp.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="Map3D.h" />
     <ClInclude Include="MapObject.h" />
     <ClInclude Include="MapObjectGroup.h" />
+    <ClInclude Include="MenuGame.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="ObjectManager.h" />
     <ClInclude Include="pendulum.h" />
@@ -192,6 +213,8 @@
     <ClInclude Include="RodGuard.h" />
     <ClInclude Include="SavePosition.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneBoss.h" />
+    <ClInclude Include="Score.h" />
     <ClInclude Include="Shop.h" />
     <ClInclude Include="Skeleton.h" />
     <ClInclude Include="Sound.h" />
@@ -199,6 +222,7 @@
     <ClInclude Include="Sprite.h" />
     <ClInclude Include="SpriteSheet.h" />
     <ClInclude Include="Stage.h" />
+    <ClInclude Include="Star.h" />
     <ClInclude Include="Text.h" />
     <ClInclude Include="TileSet.h" />
     <ClInclude Include="TinyXML\tinystr.h" />

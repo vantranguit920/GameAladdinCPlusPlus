@@ -28,10 +28,10 @@ public:
 	std::vector<Stage*> listStage;
 
 	Map();
-	Map(Graphic* graphic, const char* pathMapxml, const char* pathMap);
+	Map(Graphic* graphic, const char* pathMapxml, const char* pathMap, D3DCOLOR colors);
 	~Map();
 
-	void ReadXML(Graphic* graphic, const char *path);
+	void ReadXML(Graphic* graphic, const char *path, D3DCOLOR colors);
 	int GetData(D3DXVECTOR2 pos);
 	void SetData(D3DXVECTOR2 position, int data);
 

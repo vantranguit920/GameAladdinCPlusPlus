@@ -13,6 +13,7 @@ protected:
 	Animation *batAnim;
 	Aladdin *aladin;
 	float timecout=0.0f;
+	float timekick = 0.0f;
 	bool dyed=false;
 	bool isFly = false;
 	D3DXVECTOR2 startpos;
@@ -21,12 +22,15 @@ public:
 	{
 		stop,
 		fly,
+		die,
+		kick,
 	};
 	BatState state;
 	void ChangeAnim(Keyboard* key);
 	void Update(float dt, Keyboard* key);
 	void Render(Viewport* viewport);
-
+	void OnCollision(Object* obj, D3DXVECTOR2 distance);
+	void OnCollision();
 	
 	Bat(Sprite *sprite, SpriteSheet *info, D3DXVECTOR2 pos, Aladdin *aladin);
 	Bat();

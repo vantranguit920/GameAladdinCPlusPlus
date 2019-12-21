@@ -13,9 +13,10 @@ protected:
 	Animation* RodGuardAnim;
 	Aladdin* aladdin;
 	Viewport* viewport;
-
+	float timeattack = 0.0f;
 	float timeout = 0.0f;
-
+	int hprod;
+	bool isbleed = false;
 public:
 	RodGuard();
 	RodGuard(Sprite* spRodGuard, SpriteSheet* ifoRodGuard, D3DXVECTOR2 pos, Aladdin* aladdin);
@@ -31,8 +32,9 @@ public:
 	RodGuardState state;
 	void ChangeAnimation(Keyboard* key);
 
-	void OnCollision(Object* obj, D3DXVECTOR2 distance, D3DXVECTOR2 disGuard);
-
+	void OnCollision(Object* obj, D3DXVECTOR2 distance);
+	void OnCollision();
+	void bleed(int dame);
 	void Update(float dt, Keyboard* key);
 	void Render(Viewport* viewport);
 

@@ -13,7 +13,8 @@ protected:
 	Animation* spendTheseAnim;
 	Aladdin* aladdin;
 	Viewport* viewport;
-
+	Sound *sound;
+	GSound *spensound;
 	float timeout = 0.0f;
 public:
 	SpendThese();
@@ -28,7 +29,7 @@ public:
 	SpendTheseState state;
 	void ChangeAnimation(Keyboard* key);
 
-	void OnCollision(Object* obj, D3DXVECTOR2 distance, D3DXVECTOR2 disSpendThese);
+	void OnCollision(Object* obj, D3DXVECTOR2 distance);
 
 	void Update(float dt, Keyboard* key);
 	void Render(Viewport* viewport);

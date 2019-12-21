@@ -211,7 +211,7 @@ Object::Tag Object::GetTag()
 
 Object::Tag Object::GetTag(string name)
 {
-	if (name == "Guard" || name == "Arow"|| name == "Pendu")
+	if (name == "Guard" || name == "Arow"|| name == "Pendu" || name == "Skeleton" || name == "Bat"|| name == "RodGuard")
 	{
 		return Tag::Enemys;
 	}
@@ -228,9 +228,16 @@ void Object::SetTag(string name)
 	{
 		tag = Tag::Wall;
 	}
+	else if (name == "Rope")
+	{
+		tag = Tag::Rope;
+	}
 	else if (name == "Ground")
 	{
 		tag = Tag::Ground;
+	}
+	else {
+		tag = Tag::None;
 	}
 }
 

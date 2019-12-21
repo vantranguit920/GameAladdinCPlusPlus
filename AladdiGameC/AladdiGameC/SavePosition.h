@@ -13,7 +13,6 @@ protected:
 	Animation* SavePositionAnim;
 	Aladdin* aladdin;
 	Viewport* viewport;
-
 	float timeout = 0.0f;
 public:
 	SavePosition();
@@ -29,7 +28,7 @@ public:
 	SavePositionState state;
 	void ChangeAnimation(Keyboard* key);
 
-	void OnCollision(Object* obj, D3DXVECTOR2 distance, D3DXVECTOR2 disSavePosition);
+	void OnCollision(Object* obj, D3DXVECTOR2 distance);
 
 	void Update(float dt, Keyboard* key);
 	void Render(Viewport* viewport);

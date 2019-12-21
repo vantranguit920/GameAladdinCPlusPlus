@@ -16,8 +16,8 @@ void pendulum::Update(float dt, Keyboard * key)
 
 void pendulum::Render(Viewport * viewport)
 {
-	if (viewport->isContains(this->GetBound())) {
-		this->allowDraw = true;
+	/*if (viewport->isContains(this->GetBound())) {
+		this->allowDraw = true;*/
 
 		this->sprite->SetData(penduAnim->GetRect(),
 			penduAnim->GetCenter(),
@@ -27,11 +27,11 @@ void pendulum::Render(Viewport * viewport)
 			penduAnim->GetAngle());
 		this->sprite->SetScale(D3DXVECTOR2(1.0f, 1.0f));
 		this->sprite->Render(viewport);
-	}
+	/*}
 	else {
 		this->allowDraw = false;
 		penduAnim->SetIndex(0);
-	}
+	}*/
 }
 
 pendulum::pendulum()

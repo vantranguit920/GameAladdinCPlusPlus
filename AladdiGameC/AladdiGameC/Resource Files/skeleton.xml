@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Animations>
-<Animation imagePath="skeleton.png" width="243" height="509">
+  <Animation imagePath="skeleton.png" width="243" height="509">
     <sprite n="1.png" x="1" y="25" w="86" h="26" pX="1" pY="1"/>
     <sprite n="2.png" x="156" y="25" w="80" h="29" pX="1" pY="1"/>
     <sprite n="3.png" x="1" y="96" w="75" h="45" pX="1" pY="1"/>
@@ -21,23 +21,23 @@
     <sprite n="18.png" x="144" y="417" w="81" h="91" pX="0.962963" pY="1"/>
     <sprite n="19.png" x="117" y="169" w="95" h="77" pX="0.821053" pY="1"/>
     <sprite n="20.png" x="1" y="248" w="60" h="79" pX="1.13333" pY="1"/>
+    <sprite n="died_1.png" x="71" y="1" w="20" h="15" pX="1.5" pY="2"/>
+    <sprite n="died_2.png" x="123" y="1" w="23" h="20" pX="1.5" pY="2"/>
+    <sprite n="died_3.png" x="89" y="25" w="31" h="28" pX="1.5" pY="2"/>
+    <sprite n="died_4.png" x="1" y="56" w="38" h="32" pX="1.5" pY="2"/>
+    <sprite n="died_5.png" x="41" y="56" w="40" h="36" pX="1.5" pY="2"/>
+    <sprite n="died_6.png" x="169" y="56" w="42" h="38" pX="1.5" pY="2"/>
+    <sprite n="died_7.png" x="125" y="56" w="42" h="37" pX="1.5" pY="2"/>
+    <sprite n="died_8.png" x="83" y="56" w="40" h="36" pX="1.5" pY="2"/>
+    <sprite n="died_9.png" x="122" y="25" w="32" h="28" pX="1.5" pY="2"/>
+    <sprite n="died_10.png" x="148" y="1" w="24" h="22" pX="1.5" pY="2"/>
+    <sprite n="died_11.png" x="101" y="1" w="20" h="15" pX="1.5" pY="2"/>
+    <sprite n="died_12.png" x="43" y="1" w="12" h="12" pX="1.5" pY="2"/>
+    <sprite n="died_13.png" x="25" y="1" w="8" h="7" pX="1.5" pY="2"/>
+    <sprite n="died_14.png" x="1" y="1" w="4" h="3" pX="1.5" pY="2"/>
     <sprite n="21.png" x="7" y="1" w="16" h="5" pX="1" pY="1"/>
     <sprite n="22.png" x="93" y="1" w="6" h="15" pX="1" pY="1"/>
     <sprite n="23.png" x="57" y="1" w="12" h="13" pX="1" pY="1"/>
     <sprite n="24.png" x="35" y="1" w="6" h="8" pX="1" pY="1"/>
-    <sprite n="died_1.png" x="71" y="1" w="20" h="15" pX="0.5" pY="1"/>
-    <sprite n="died_2.png" x="123" y="1" w="23" h="20" pX="0.5" pY="1"/>
-    <sprite n="died_3.png" x="89" y="25" w="31" h="28" pX="0.5" pY="1"/>
-    <sprite n="died_4.png" x="1" y="56" w="38" h="32" pX="0.5" pY="1"/>
-    <sprite n="died_5.png" x="41" y="56" w="40" h="36" pX="0.5" pY="1"/>
-    <sprite n="died_6.png" x="169" y="56" w="42" h="38" pX="0.5" pY="1"/>
-    <sprite n="died_7.png" x="125" y="56" w="42" h="37" pX="0.5" pY="1"/>
-    <sprite n="died_8.png" x="83" y="56" w="40" h="36" pX="0.5" pY="1"/>
-    <sprite n="died_9.png" x="122" y="25" w="32" h="28" pX="0.5" pY="1"/>
-    <sprite n="died_10.png" x="148" y="1" w="24" h="22" pX="0.5" pY="1"/>
-    <sprite n="died_11.png" x="101" y="1" w="20" h="15" pX="0.5" pY="1"/>
-    <sprite n="died_12.png" x="43" y="1" w="12" h="12" pX="0.5" pY="1"/>
-    <sprite n="died_13.png" x="25" y="1" w="8" h="7" pX="0.5" pY="1"/>
-    <sprite n="died_14.png" x="1" y="1" w="4" h="3" pX="0.5" pY="1"/>
-</Animation>
+  </Animation>
 </Animations>
